@@ -1,0 +1,873 @@
+BrandedAI X LL - Bank Rec
+Metadata
+
+Title: BrandedAI X LL - Bank Rec
+Location: Teams
+Date: 2025-11-19T14:02:51Z UTC
+Attendees: Holly Amos, Scott Markham, Michael Jefferies-Wilson
+Link: https://app.meetgeek.ai/meeting/2b5faa0f-faf1-41f4-91a5-5253872e947d
+Agenda:
+30-Minute General Meeting AgendaOpening and Welcome (1 minute)Quick welcome and introduction to the meeting's objectives.Review of Action Items (3 minutes)Brief update on the status of action items from the previous meeting.Key Discussions (20 minutes)Focused discussion on one or two key issues that need input or decision-making.Time-bound to ensure brevity and relevance.Next Steps (3 minutes)Quick summary of action items arising from the meeting's discussions.Assigning of responsibilities for these items.Wrap-Up (3 minutes)Final thoughts or comments.Confirm the time for the next meeting.
+
+MeetGeek Transcript
+
+Unknown speaker - 01:30
+Are you
+
+Scott Markham - 01:30
+working from home or?
+Yeah,
+
+Holly Amos - 01:35
+sorry, I was just typing a message out
+
+Scott Markham - 01:38
+there.
+No, I didn't, do you, do you, do both of you generally work remotely or?
+
+Holly Amos - 01:44
+I work from home two days a week.
+I just changed my work from home days to be the days that we had these calls.
+Because it makes it easy.
+Obviously, I don't want to be having these conversations in the office when the people's jobs that it affects are also in the office with me.
+Yeah.
+So doing them at home just relieves any worries about that.
+Yes.
+
+Holly Amos - 02:08
+I'm so
+
+Michael Jefferies-Wilson - 02:08
+sorry, I'm so late.
+You're absolutely fine.
+Just spotted a few problems with Karen, Holly, that I just struggled to get off the call.
+So apologies, Scott.
+Oh, good.
+Sorry, yeah, sorry, Holly, did you get my note earlier about that data?
+Just about the GDPR piece, I don't know whether you've gone back to Scott.
+
+Michael Jefferies-Wilson - 02:34
+I haven't yet know,
+
+Holly Amos - 02:35
+I've been in meetings all morning, but I have just found it in my inbox.
+Let me have a look.
+No, it's fine.
+You touched on
+
+Michael Jefferies-Wilson - 02:42
+this earlier, Scott.
+So the data you've asked for.
+I was just checking.
+I think we've got the NDA, right, but we can't share on the GDPR piece.
+We can't share certain bits with you.
+And then I knew you alluded to that on the call about, you know, obviously take out bits and pieces as and when needed.
+But we, yeah, like I said, sharing the data.
+
+Michael Jefferies-Wilson - 03:04
+Just it seems a bit odd, right?
+Because if you're a supplier.
+then we can share data but under the current NDA we have we have to hold back the names and amounts but then if we give you access to the system are you going to see that anyway it just feels a bit it just feels a bit backward frankly but yeah I mean we can
+
+Scott Markham - 03:23
+we can we can amend the NDA or provide an access agreement if it's required but I will need as I do with other clients I need I need access to their to the data to make system work and then what access if I need it ongoing obviously if we go on to retainer to obviously make sure I'm keeping the
+system working error management etc we just have an ongoing contract so it's yeah that's why I like to have this back working place so it's both you and I are covered just thinking
+
+Holly Amos - 03:59
+about this obviously Scott you asked for the aka sheet of like the cheat sheet type thing of things that we could look up from, but that is just past customer references.
+Okay, so I'd be giving you a blank cheat sheet if you might have
+
+Scott Markham - 04:15
+any details.
+Yeah, yeah, so I think we need to we need to amend the documentation or create documentation that covers that you're both that you're happy with for me to see details.
+Otherwise it's very difficult for me to put together the system to make it work.
+Do we need, do
+
+Michael Jefferies-Wilson - 04:36
+we need, sorry, I'm just, I don't, do we need, does the business need to engage you with a, with a paid scoping program at the start of this, Scott.
+I feel like we're trying to get, we're trying to get the quote for the whatever, you know, the next steps and stuff, but this is going to be a little bother if we can't actually progress this.
+Yeah.
+How would you, how would you normally do this?
+Would you just, I mean, like, I mean, I'm working as a consultant for Liquidline.
+I've obviously got like a standard supplier slash consultancy agreement which covers all of this.
+What do you normally do?
+
+Michael Jefferies-Wilson - 05:07
+Do companies normally just send you the stuff anyway or what do you normally do?
+It varies
+
+Scott Markham - 05:13
+on the complication of the of the project and what they're willing to share to start with.
+Typically today most companies have given me the access I need initially before the proposal just because we're covered by NDA and access agreements so it's up to I mean yeah in theory we could have a scoping contract I'm just I don't want to I don't want to delay the progress on this
+because I know we're on this particular project definitely we've got With the faster we get this implemented, the better it is for you guys.
+Yes, especially with the, you know, the long term ERP update coming in over the next 18 months, 12, 18 months.
+So.
+Um, yeah.
+Can we do the access request
+
+Michael Jefferies-Wilson - 06:06
+for, can we do the access request documentation then?
+Yep, sure.
+Um, I think I might have a, I might have a delay on that because I think our legal council is currently away and I don't have anybody else to review a legal document.
+So we'll have to just sort of, continue.
+I hope to do bank rec now and then come back to this.
+But if you can send across what you've got, and then if I can link in, I haven't heard back from Matt about the eagle access.
+I have chased him now, so, but I haven't heard back, but if I can send him across the documentation that covers us on the GDPPR piece, that would be really helpful.
+
+Michael Jefferies-Wilson - 06:41
+Yeah, sure.
+I can do that after.
+Cool.
+Super.
+I was, I was, I was very pleased to read your comment around the improvement.
+potential on the cash receipt that's exactly what we want to be doing and I got off a call I got off a call Holly with Glenn and around how are we clear out if we have a if we have a one penny sat on a customer account and it sounds like we have to do like have to do eight journals and stuff it just
+sounds like it just sounds
+
+Holly Amos - 07:11
+absolutely shocking If it is a, so if you have a credit note or an invoice that has an additional penny, you can write it off in the normal process.
+So you would just do a sales journal.
+So one sales journal and it's gone.
+If you have an SCT, a normal SCT, so not a pro forma SCT, you have four transactions to get rid of So one of them is an invoice to take the balance.
+Let me just find it.
+There is, we've got documented processes for them, but basically the issue that we have is when the penny comes from a pro forma.
+Because if we get a pro forma payment, the system automatically allocates the invoice to the pro forma payment once it is cleared.
+
+Holly Amos - 08:02
+There is some VAT rounding differences and it also comes from the websites.
+But because they are payments not posted by us, you can't allocate anything to them yourself and you can't reverse them.
+So you have to refund the penny, raise an SCT to repost the penny, then raise an invoice to write off the penny.
+And it's all for a penny or 2p or something like that, but it tends to be a penny on any customer accounts beginning with an e, which are portals or proformers, because of the way the VAT's done on the website or the proformer versus the payment.
+
+Michael Jefferies-Wilson - 08:46
+if you can't, all right.
+So let's go through bank wreck, but I think I think the piece I'm thinking is that there's way more than just these two items that I'd like Scott to look at.
+I mean, hearing about telling me to even do just three or four journals per penny.
+I mean, I don't know how the team are coping with this.
+I'm also I'm also hearing that if we do when we roll out some improvements for bank rec, sorry, cash reconciliation, I'm thinking that, you know, what are you thinking about changing Curtis's role?
+And then I'm hearing that he could he could do a lot of these one penny journals and I was just like, oh gosh, no, please no.
+Don't don't go from don't go from one horrible manual process to another
+
+Holly Amos - 09:28
+horrible manual process.
+Yeah.
+No, I think there is many things that Curtis could be doing that he just doesn't have time.
+So like we've got a backlog of unallocated cash.
+So we need to work with the customers, see what they've paid or look at our allocations, allocate the accounts.
+Look at over payments or duplicate payments or when people have paid and we've taken a direct debit to see do they want refunds if they do sort out the bank details put it through the refund process refund the customer post the payments kind of there's a number of things on that side that he just
+doesn't have the time to do because he is just posting cash all day Okay,
+
+Michael Jefferies-Wilson - 10:07
+excellent.
+Okay, excellent.
+So hopefully, hopefully we clean up some of the cash posting efficiencies and then you'll be able to unlock him to be able to do some of these other bits and pieces.
+Yeah.
+It sounds like this particular one penny thing has been bouncing around.
+It sounds like it was in credit control and then it's in your team and now it's across two teams.
+Anyway, sounds like an absolute mess.
+
+Michael Jefferies-Wilson - 10:28
+Let's go into bank rec.
+Bank
+
+Holly Amos - 10:30
+rec.
+Okay.
+these down so bank rack we have one two three four one two three four five bank racks and they're all stored in different places because some fun so let me open up these so inside of we do bank rack so we have a UK bank rack that is our biggest bank rack that has all of our current account
+transactions in for the UK system we then have our island bank rec and that is the only island bank account for our island system we have our deposit account so the only things that go in and out of that are movements between our current account and our deposit account and then any interest that
+they pay us and then we also have Where are the other two banks?
+We then have a euro account.
+So that is our euro transactions from the UK company.
+
+Holly Amos - 11:44
+The only things you'll really see go through there when our Ireland company pays our UK company for transactions or any loan account payments and when we pay our suppliers along with any currency purchases.
+So we don't have customers paying into here other than ourselves.
+And the only other money that comes in is when we purchase currency and the only money that goes out is when we either pay ourselves or we pay our euro suppliers.
+And then that's the same for our dollars.
+However, the only money into that account is currency purchases and the only money out of that account is our dollar customer payments.
+So if we just go to main bank accounts, probably the easiest one to start
+
+Michael Jefferies-Wilson - 12:34
+with.
+Just really quickly, Holly.
+When we spoke the other day with Scott, I couldn't quite understand why we don't just have a multi- currency account with Lloyds.
+Why do we have lots of different accounts?
+I don't know.
+I
+
+Holly Amos - 12:45
+mean, originally when I first joined, we only had one bank account, which was our current account.
+And then they brought a dollar, not they brought, they created a dollar and a US dollar, a euro and a US dollar bank.
+But I couldn't tell you the logistics behind it.
+I just, I don't
+
+Michael Jefferies-Wilson - 13:06
+understand why we have that.
+I just don't understand why we have all the different bank accounts, frankly.
+Why do we need, you know, I appreciate, I mean, I work for Lloyd's Bank for four years the start of my career and the systems really not very good, but I can't believe we need.
+mean, with HSBC, you just have a multi-currency bank account, which does everything you've just said.
+Anyway, that might be one for me to kick Yep, no, that's
+
+Holly Amos - 13:35
+absolutely fine.
+So let me go in here.
+So what we then have inside of, what's going on?
+Go away.
+Give me back my actual sheets.
+I've got too much open.
+Let's try this again.
+
+Holly Amos - 13:49
+So we then have a spreadsheet that has every day's bank download.
+So what will happen is everyone will come in the morning.
+She will log into the bank.
+and download So she'll do the same process as Curtis, but she downloads a different format because that works with her reconciliation sheet.
+So when she gets it, it will just be these transactions, nothing will be colored and there will be nothing in this column.
+So it will just look like a standard template.
+So she'll download that, she'll pop it into the sheet, just make sure that it still totals back correctly.
+
+Holly Amos - 14:25
+And then she will open up a bank reconciliation.
+So inside here, these transactions are Eagle transactions.
+And they come off of a few tabs, but we'll get into those in a second.
+So these are the Eagle transactions.
+And then on this side you have the closing bank balance at the end of the day that she's reconciling.
+This figure here is any transactions that haven't been reconciled.
+And then these are ledger movements.
+
+Holly Amos - 15:06
+So what was the closing ledger?
+What is the opening ledger?
+And sorry, what is the closing ledger?
+What is the movement opening movement closing?
+I will get there in the end.
+And then it will tell you if there's any differences which currently.
+There are, but where have they come from.
+
+Holly Amos - 15:28
+I think Erin is still doing her bank records for today, but yes.
+So that is what this spreadsheet looks The next tab that we have is a batch summary.
+So inside here, this looks up from our eagle sheet.
+And what we would do is find the batch reference number within this sheet and pull it through.
+If I start from the very beginning, now that we know what's on the front page.
+So where is my eagle here?
+So what Aaron will do is she will open that sheet, she will go to the eagle tab like we have here, and then she will go into her eagle and go to normal ledger and then, oh, which one do I want?
+
+Holly Amos - 16:21
+haven't done this in a while.
+don't think that one.
+What month are we in?
+November.
+Oh, that's what I wanted to do.
+Just check this gives what we want.
+Yeah, that's what we want.
+
+Holly Amos - 16:55
+Okay, so what she would do.
+is she would open her trial balance summary and her eagle she would right click refresh on this screen and at the same time she would press export on this screen and then what that would do is that will give her a spreadsheet and that will literally just have this block on she will take from that
+spreadsheet and post that into the summary tab so you will see here this is the one that she done when she done it last.
+And that will then mean that her eagle has added in any new transactions and her TB is now updated to include those transactions.
+So the next thing that she will do is she will come in here and she will look for the last ledger batch that she done.
+So one, two, nine, four, six, two.
+And she will take that into batch number and pop in this box.
+
+Holly Amos - 17:57
+And then when she refreshes this, it will give any new transactions.
+So, for example, she'd have taken this as the last and she'll copy from the batch summary tab and paste at the bottom of the Eagle side of her bank break.
+So then what she is left with is all the transactions in Eagle that have been posted and all of the bank transactions that have gone through the bank and should be posted.
+And then what she will do is she will work through all of the transactions that have been posted in Eagle against all of the transactions that she needs to reconcile in her bank.
+And as she goes through and matches them off, she will put an R in these boxes and these boxes when they match.
+And then what she will be left with is just anything that does not reconcile back.
+So you can see on yesterday's everything reconciled, but if anything didn't.
+
+Holly Amos - 19:08
+She would then list it in.
+Where's her reconcile, she hasn't got any at the moment, but there's a section where she just put her reconciling items, which would then go into the differences.
+and freeze please.
+The information these two boxes pulls from the TB tab so it will be the opening balance and the moving and then this closing figure should match closing figure and if doesn't it then gives difference.
+And yes, this balance here is any, the balance of these unposted transactions on the Eagle sheet.
+But yes, we do have the same type of sheet for currencies, but in currencies they have multiple sides.
+So inside of currency if we take euros for example the transactions will show pounds and euros and then you'll get total in pounds and euros so you'd do the same thing have your bank download on your export file and then you'd post your TV into your TV tab after downloading it.
+
+Holly Amos - 20:55
+So you just change the code from 1212.12.05 in here to 12.12.14, as that is this bank's reference.
+The eagle tab in this is actual grid at the top.
+So this is a refreshable sequel sheet pulling stroke on the system.
+And then she would work through, have a look at what went out of the bank, what was posted in Eagle, until everything reconciled back.
+And the only place to see the bank balance is on the Reval screen.
+So in Eagle in the GL, the bank balance will show in pounds.
+But because we are doing the currency bank reconciliation with the Euro Reval, the only place that you can see is in
+
+Holly Amos - 21:53
+here by pressing revalue everywhere else in the system will show you the bank balance in pounds but this will give you currency balance so what she would do as she does her bank reconciliation she will once she's got it and it reconciles and she's happy with it She will then check that these figures
+match.
+So the current balance matches this current balance.
+The month end balance matches this month end balance and the revaluation amount matches the revaluation amount.
+And then she can go back into this eagle screen and post a revaluation.
+By changing the month to the month that she wants checking all of the figures and pressing post.
+So that's probably the quickest explanation of our bank wreck ever.
+
+Scott Markham - 22:55
+Yes, thank you for doing going to need to go over it a few times on the replay.
+What's going No, this is obviously waiting for Curtis has to do his bit first, Yeah, so Curtis
+
+Holly Amos - 23:13
+will post all the transactions, which is why when we refresh this eagle side, they then will add themselves to this list, which will add into this pivot table, spitting out any new transactions.
+So we'll copy them from in here and paste them back into... Where's the bottom of this The eagle side, as you can see, Aaron's done with this Yep.
+to then be reconciled against any either outstanding transactions or new transactions.
+
+Scott Markham - 23:49
+So is this generally, are you doing both this and Curtis doing what he's doing on the same day, is one behind the other?
+So
+
+Holly Amos - 23:58
+the bank rec is done the day after, whereas cash postings is done day of.
+So Curtis will post the cash the day we receive it.
+Everyone reconciles the bank.
+a day behind.
+So today she'll reconcile the 18th, tomorrow she'll reconcile the 19th.
+Yep, Okay.
+
+Scott Markham - 24:23
+Should
+
+Michael Jefferies-Wilson - 24:23
+I go for a question?
+Ask the way.
+Unless I'm missing something.
+It sounds like we're double reconciling between the cash posting process in the bank right, because this is all a lot of this is all the same lines that Curtis would have done the previous day and Aaron is having line by line reconcile these.
+Um, isn't, is that, is that, I missing something?
+It sounds like the same process.
+In a
+
+Holly Amos - 24:53
+way, so once, so Curtis will post all the customer receipts and they will appear in Erin will post any supplier payments.
+She'll post any direct debit payment, she'll journal any thing that needs to be journal to like bank charges or anything that comes in that needs to go So she will reconcile courtesy's transactions.
+She will post payments, journal payments income and then What that should leave her with is there should be nothing left on her bank side.
+if there is anything left on her eagle side, it's because something is wrong.
+So either there's been missing postings, there's been incorrect postings, people are posting things that don't exist.
+It might be someone's tried to post a correction haven't done it correctly.
+So what this will leave is anything that's wrong.
+
+Holly Amos - 25:58
+Well, anything that's been done wrong on the eagle side.
+So it's kind of mix.
+She'll reconcile what's in there.
+She'll add what's not in there and she'll fix what's in there wrong.
+
+Michael Jefferies-Wilson - 26:12
+I think you'd said that this like most of her job.
+So,
+
+Holly Amos - 26:17
+so Erin, so Erin's job is split.
+So she comes in the morning and she'll download her bank download Curtis's bank download first She will then post any of the cash that came in yesterday but wasn't yet posted.
+So if Curtis doesn't do third pull or something comes in after working hours, it will then appear dated for the day before, but received on the download of that day.
+So she'll come in, she'll download both lots of bank downloads.
+She'll post any missing cash from Curtis's side.
+And then she will start her main bank rec, which is her UK She will then do the same for her island She does normally it's of that takes her normally halfway through her day on a normal day.
+On month end, the last few days and the first few days do take kind of the whole day to get them reconciled through and posted.
+
+Holly Amos - 27:17
+And then weekly she will reconcile the euro, the deposit and the.
+US dollar account as well.
+So, sort of Monday to Thursday, it's about half of her day.
+Friday, it's like three quarters of her day.
+And at month end, it can be all day for a few of her days.
+So it kind of evens out to half to three quarters her role.
+Once she has completed those, she does then do accounts payable and accounts receivable tasks, such as she does all the vending transactions, she manages the island accounts payable system, she manages the island inbox, she helps on the UK inbox and you know, all of those kind of, she'll do the
+
+Holly Amos - 28:09
+stuff that she needs to do, but she does have to assist on the other areas, but this the main chunk of her So all
+
+Scott Markham - 28:21
+supplier payments and things are going are all recorded on at Eagle So
+
+Holly Amos - 28:26
+supplier payment runs are recorded in Eagle by the payment run function.
+Manual payments are posted.
+If we pay pro forms or if we do ad hoc anything that is not done on a payment run so direct debits all of those get posted Erin so whenever anything is paid that is not on the standard payment run so by that what I mean is we have a payment run function.
+So when you do a payment run on the payment run function, and once you've pressed pay and put it all through, that will post all the payments for But if you pay something outside of this process, you have to manually post it on purchase invoice payment.
+So when it loads, I can show you.
+It is a blue screen and these are horrible, horrible to work with.
+when it loads, I can show you what we're looking So it's all of
+
+Scott Markham - 29:32
+those payments that haven't been on a payment run, which Erin's now posting automatically manually.
+
+Holly Amos - 29:38
+Yeah, so she'll post them on this screen.
+anything that goes through on the payment run function, posts it themselves.
+Anything that doesn't gets manually posted on the purchase invoice payment, which is this
+
+Scott Markham - 29:54
+Do you know what percentage, approximately
+
+Holly Amos - 29:56
+that would That is a question.
+Can
+
+Michael Jefferies-Wilson - 30:03
+you filter it on that right screen there in Oh,
+
+Holly Amos - 30:09
+sorry, what were we looking Just non- permanent.
+So I think the easiest way to see that would be in.
+Yeah.
+So inside.
+Yeah, we put all of our payment requests.
+So what day is this?
+I'm not too sure.
+
+Holly Amos - 30:32
+This is 17th.
+No, yes, the 17th.
+So we done to JLL.
+We done one to nationwide fleet services.
+We done one to tower.
+Who was this?
+One for a vehicle repair.
+
+Holly Amos - 30:55
+One is this A engineer breakfast.
+for a former account and another pro former account.
+So this was just the first day that I clicked on.
+And there was, so they're in one.
+So one, two, three, four, five, six, seven.
+And they would have hit the bank wreck 18th, I believe.
+Nope, they'd come They'll come out in tomorrow's bankruptcy.
+
+Holly Amos - 31:29
+So tomorrow there will seven to post.
+Out of how many
+
+Scott Markham - 31:36
+do I mean, do you have payment runs every day or is it once a week or?
+
+Holly Amos - 31:40
+We do payment runs every day for discount suppliers.
+So if we go in So if we have transactions on our discount suppliers, we do those daily.
+If we have.
+No transactions for them.
+We don't do them obviously.
+We do our payment runs once week.
+So once a week you will have the main payment runs on a Wednesday.
+
+Holly Amos - 32:11
+So like these ones here.
+And then every day you'll have, is this a discount?
+Yeah, discount payment runs.
+If there's anything to pay.
+So was nothing on the 19th, but there was on the 20th, nothing on the 18th.
+No, There was on the 18th.
+There was on the 17th.
+
+Holly Amos - 32:31
+It kind depends what transactions they are, but the system will automatically post these So we don't have to post those.
+Someone is working these if you're wondering where they're going.
+Yeah, that's
+
+Scott Markham - 32:43
+fine.
+So is there a window that shows how many payments were done in month on the payment
+
+Holly Amos - 32:49
+Um,
+the
+
+Scott Markham - 32:56
+way my mind's going on this is that obviously the payment run, the payment run ones were the easiest to reconcile.
+Yeah, from a data in systems.
+I'm just trying to see many that approximately would be a to see how much would be
+
+Holly Amos - 33:16
+me grab a caption here.
+So in, we'll take last month as our example.
+So it doesn't work There's some
+
+Scott Markham - 33:31
+days when there's huge amounts,
+It will be,
+
+Holly Amos - 33:38
+so the daily ones are only a select few suppliers, whereas the weekly ones are for a lot
+You
+
+Michael Jefferies-Wilson - 33:54
+probably just take the four weekly ones, to give a indicative
+
+Holly Amos - 34:13
+Oh,
+that one was large.
+
+Scott Markham - 34:34
+532.
+
+Holly Amos - 34:37
+What's a large you think that's unusual?
+It depends when we last done the payments.
+So that's a discount.
+That's a discount.
+That's a discount.
+Just trying to find the main payment room before So we done one on the 30 up on the 9th.
+Because normally if we haven't done one, like if we skipped week Something like that.
+
+Holly Amos - 35:15
+Normally you'd expect it to be high.
+But like this week here 80. What was the first week of the last month?
+I
+
+Michael Jefferies-Wilson - 35:23
+wonder if it was just looking at my calendar.
+I'm wondering it is something around October half term don't whether we.
+Bigger payment run ahead of half term or something.
+
+Holly Amos - 35:36
+Going back where was
+
+Scott Markham - 35:41
+So probably what, 2,000 payments
+
+Holly Amos - 35:50
+What caused that to be?
+Like I say, a large number of them look to be Amazon.
+Field service solution and Frankie had more than they normally would, but Haley was on holiday, I think, so she would have bulk approved everything.
+Emdel Fleet has more than normal.
+Yes, he
+
+Scott Markham - 36:26
+probably got two weeks in think?
+We did
+
+Holly Amos - 36:32
+all of these tower ones.
+You can see in here, which would have increased number of them.
+Like there's all of these, but they only 17,000 pounds.
+Yeah.
+
+Michael Jefferies-Wilson - 36:45
+What are the 60 grand payments, Sorry, 60 pound payments They
+
+Holly Amos - 36:51
+are titles.
+But when it comes to the end of a lease agreement,
+
+Michael Jefferies-Wilson - 36:55
+and we pay 60
+
+Holly Amos - 36:56
+pounds.
+We pay 60 pounds so that we own the machine, I believe, or we own yeah, we own the machine, I think That's a lot
+
+Michael Jefferies-Wilson - 37:06
+of 60 pound payments.
+
+Holly Amos - 37:08
+That probably was a backlog of them, because you can see in here, have you got February, March, April, May, June August.
+September and October.
+So there might have been a backlog at the time, which is why we just paid them all Yeah,
+
+Michael Jefferies-Wilson - 37:27
+that looks like we've had we've had comms from tower or something saying if you want to own this equipment, you've got to pass this 60 quid across 50 items Yeah, that's
+
+Holly Amos - 37:37
+probably more than likely what it is, but normally we don't have this many tower.
+Normally there's like one or Yeah.
+Or well, this one's got four.
+See, there was a lot more in August, but there's not normally a lot of
+
+Michael Jefferies-Wilson - 37:52
+Yeah, okay.
+So there's a few unique or one- off items at play, I'd say, with that payment
+
+Holly Amos - 38:01
+Yes, definitely.
+Well,
+
+Scott Markham - 38:04
+yeah, what I'm thinking is that if we automate as much as possible the standard payment run ones, that would be a huge chunk of the rec work done,
+
+Holly Amos - 38:15
+Yeah, so the ones that Aaron posts, some of them are direct debit, so you'll see here, she would have posted these ones, but they are all direct debits.
+She would also post like manual payments, but majority of manual payments come from reformers, so we pay deposits before.
+Most of our equipment and things come from overseas.
+So you'll see here, this is a 30% deposit and then what's this
+That one doesn't need a deposit, but they come from overseas.
+So what will happen is we will pay a deposit when we place the and then before they will release the goods on the ship, we will pay the remainder it.
+And they will pop the requests in the sheet of when they want the deposit paid and then when they want the invoice pay remainder paid.
+
+Holly Amos - 39:21
+But because all of these transactions reformer invoices, they don't go into the system.
+So you see here, for example, we paid a deposit of 289,000 and then we had to pay remainder 124,000 before they've released the Is that K2s there, Holly?
+I think that was K2s on think so, I don't know where it's gone.
+I think it was It
+
+Michael Jefferies-Wilson - 39:58
+doesn't say, does it?
+Because the K2, I think, is our designation, A fully
+
+Holly Amos - 40:02
+automatic copy machine.
+can see what it is, isn't it?
+No, they do tell you what they This one tell us what it
+
+Michael Jefferies-Wilson - 40:18
+I'm trying think just I'm just thinking out loud here that we have we have a horrible inventory number at the moment, Okay.
+So we have, frankly, I think all one of us bad.
+have inventory sat in stock for too We have consumables sat in stock for too And we have equipment sat in stock for And I'm just thinking out loud that I wonder whether this pro forma thing is part of the problem like that order, that was a big order, In November.
+Gavin sent out that saying that we don't have any K2s for sale until So I don't know why I don't know where like, are they on a ship I'm kind of talking out loud here, but we've got, there's
+
+Holly Amos - 41:04
+loads of others.
+They take six months, so we'll pay the deposit, and then it normally takes, I think, six months for the goods to get to us.
+We'll pay a deposit and before they will release the goods on the ship, we will pay the remainder.
+And then we know that once we've paid the remainder, we have a six- month wait before we receive the stock.
+The only reason is because when we do our goods in transit, depending on if we've only paid a deposit or we've paid the deposit and the remainder, that will let us whether it's goods in transit, if we're liable for it, if the supply is still liable it.
+but I believe it is six months after the full payment has been Six months after the full payment.
+Yeah, so we'll pay the deposit for them to make them, and then we'll pay the remainder for them to put them on And then once they're on the I believe it's six months.
+
+Holly Amos - 42:04
+So that
+
+Michael Jefferies-Wilson - 42:04
+400 grand that you've just shown is, we've spent 400 grand on something that's going to be sat on a boat for But we don't have any of them right now to sell until February.
+So we must have another shipload from three months ago.
+It's currently sat on the boat somewhere else in So at any one time we must have millions of quids worth of stuff just sat Yeah.
+
+Scott Markham - 42:24
+Is it six months or weeks?
+Wow.
+
+Michael Jefferies-Wilson - 42:29
+That's a slow boat, isn't it?
+So.
+No, I don't know much about how fast boats go.
+Where
+
+Holly Amos - 42:36
+are we?
+Let's have So 9.071. So we paid, we paid a deposit for this on the secret of August.
+We then paid the balance on the 21st of August.
+Let's see when we got That's August
+
+Michael Jefferies-Wilson - 42:52
+last it?
+
+Holly Amos - 42:56
+Where are we?
+If
+
+Michael Jefferies-Wilson - 42:57
+you're doing a six- month tracking, I'm assuming you're looking at August last
+
+Holly Amos - 43:02
+I'm thinking, I'm trying to work out what this Is it So when did they order it?
+
+Michael Jefferies-Wilson - 43:10
+It sounds too long.
+It sounds
+
+Scott Markham - 43:13
+Normally ships from China about four to six weeks, but... We've got
+
+Michael Jefferies-Wilson - 43:20
+the cheap ship.
+The one that's got like someone rowing, you know.
+Yours goes the other way
+
+Scott Markham - 43:28
+around the world.
+
+Holly Amos - 43:31
+Where am I thinking of Susu?
+Who is it?
+There is one of them where it months.
+Is it These are all accounts that just have payments awaiting deliveries.
+So this one here is So we ordered May.
+We paid the remainder September.
+Where this?
+
+Holly Amos - 43:58
+Have
+So ordered on the 7th of May, received on 2nd of October.
+May, June, July, August, September, October.
+Wow.
+Yeah, 7th to the 2nd.
+So it took five months and 26 get what even are these?
+
+Scott Markham - 44:26
+So the second the second payment was September.
+So basically it took about four months to make in a
+
+Holly Amos - 44:35
+month to ship.
+Is that It looks that way.
+But yeah, that's, they'll put the first one in, we'll make a payment and then they'll ask for a final payment.
+We'll make the final payment and then we'll receive it.
+But from start to, oh, it's start to finish.
+So from ordering it to receive and it takes six Yeah,
+
+Scott Markham - 44:56
+so you've got and the deposits of what, between 30 and 50%?
+The,
+
+Holly Amos - 45:02
+depending on who it is, so sell cup is 30%, I think the remainder of them are 50%.
+Yeah,
+
+Scott Markham - 45:12
+so you will have least 50% money tied up in product being made between to six Yes,
+
+Holly Amos - 45:24
+I think at one point we had a million pound one them.
+What month was Was it this I would call that one if
+it this one?
+No, that was 995,000. But yeah, one of the So I'm not sure which one is off the top of my head.
+We did have around a million pound just waiting for goods to be
+
+Michael Jefferies-Wilson - 46:02
+Okay.
+right.
+Okay, I have got a piece on this because I want to, I'm trying sort out, businesses trying to sort out payment terms for those color machines, Holly, but it's a bit of a mess, frankly, because I don't we seem to be ordering us so much.
+Why are we still doing pro forma?
+I'm hoping at some point be not correct, but in some of this manual piece on these proformers for that particular customer.
+Yeah.
+But also, you know, the company is doing 50 million revenue now.
+
+Michael Jefferies-Wilson - 46:35
+When the company is doing 100 million revenue, we don't want doing, don't want to know, two, three million quids worth of proformer every year, do we?
+So, yeah, that might be a bit more of a higher level piece.
+Yeah.
+OK, so can I just reiterate my question earlier.
+I'm sure Scott's got a few more.
+I've only got 10 minutes.
+But so for Erin then so she's got to reconcile journals, direct debits, purchase wrong payments and then the cash receipts.
+
+Michael Jefferies-Wilson - 47:00
+I'm guessing the cash receipts piece.
+Does she get a file that comes straight from Curtis to say these are all the cash receipts that I've uploaded and therefore she doesn't need to reconcile it She
+
+Holly Amos - 47:10
+can see it in Curtis's sheet because obviously she uses the same sheet when she posts the cash in the morning.
+So she can see all of those transactions, but I think she reconciles them directly against the bank, because if they haven't been posted correctly or if they've been posted to the wrong accounts or for the wrong amounts, she wouldn't pick it up using his sheet against his transactions.
+
+Michael Jefferies-Wilson - 47:32
+So are you saying she line by line checks these because there's thousands of lines What's her tools?
+How is she checking this So
+
+Holly Amos - 47:42
+for example, this one, so today there was 90 transactions.
+So when she updated it, she would have been given the transactions in the new set.
+So if we put this what are on?
+Just hopefully make I'm not on the 19th.
+She's on the
+
+Michael Jefferies-Wilson - 48:06
+This is the wrong month.
+That I was going to say you might be on the weekend day
+
+Holly Amos - 48:16
+Let's go middle of October.
+think you're going to
+
+Michael Jefferies-Wilson - 48:20
+that she eyeballs this line by line,
+
+Holly Amos - 48:25
+So she will go through these transactions.
+And she'll come in, she'll normally if she sorts them by value, they will just match off.
+So you can look down and be like, match, until you come to something that doesn't match.
+But I think where she's done it so much she knows what she needs to post so she can eliminate them straight That will then leave with the remainder of the transactions and if they all reconcile.
+They will just clear Depending These ones all reconcile.
+So she must have some additional transaction.
+But yeah, basically what she will she will reconcile exactly what's on here against what's on here, query anything that doesn't match, post anything that isn't posted and fix anything that's posted But she will go through line by
+
+Scott Markham - 49:37
+Okay.
+
+Michael Jefferies-Wilson - 49:38
+I'm sure they say you could do about that then, Scott.
+
+Scott Markham - 49:45
+I think there's quite a bit that can be here.
+I think with Curtis between Curtis and there need, there could be a that's done once, if you know what I mean, instead Yeah, that would be good.
+There's definitely some efficiencies what they're both doing to get to the end result, to leave just a small amount of hosting that needs to be done for a small amount day or once The rest of it, I'm sure from what I've seen so far, obviously I need to continue to think around and, and put some
+logic around it all, there's huge, huge efficiencies to be here, to be, to be implemented across both
+
+Michael Jefferies-Wilson - 50:33
+Fantastic, fantastic.
+So, um, okay, so Holly's got, Holly's got some of the files ready to send across to you, Scott.
+So if we can get the, um, that, um, or what was it called a data access?
+I can't turn the terminology was you said Yep.
+You can get that over.
+Like I said, I might have a bit of a day on my side because I don't have any legal review the moment.
+um, and then we can share the files.
+
+Michael Jefferies-Wilson - 50:55
+Um, and then what would next steps like,
+
+Scott Markham - 50:59
+Yeah, to.
+Obviously some time reviewing everything we've gone through in those two calls in more detail and the whole process come up with and share as to what I think can happen, but it's difficult for me to do that without getting looking around the and I don't want to I elongate this longer than it has
+be like trying scoping contract first then spending time on that and then do try and hit hard fast and accurate to start with in a short space time and then be working on the Yeah,
+
+Michael Jefferies-Wilson - 51:43
+yeah.
+Okay.
+I've just checked, Holly, I've just checked Kathy's out office.
+She's saying till Friday.
+So hopefully I'll set a note to getting caught on So hopefully you'll be able to get back to you on Friday, Scott.
+And then hopefully we can send across that email Yeah, we should really good.
+It's only a couple of days, but you know, it'll feel, it'll feel like five minutes away.
+
+Michael Jefferies-Wilson - 52:06
+I'm sure.
+Yeah, and then we've got, do you got any bottlenecks on side, Holly, to be able to start something in December.
+I'm just thinking.
+I am off for half Yeah, is that the second half around Christmas, so is that?
+Yeah, so
+
+Holly Amos - 52:27
+I'm from the 19th onwards and I do have month end the first So I can shuffle things around.
+That's not a But December is a busy week.
+It's year prep, month But yeah, if you let me know when you can do and what requirements you have, like, if you need a full day or an hour here, there and I will then rearrange my calendar to make Thank
+
+Michael Jefferies-Wilson - 52:59
+Super.
+And then, and then once we've the, once we've got the proposals, Scott, if I can, Holly, if I can sit down with you and Karen, just, I want just get the, I want to get the comms to the team ahead of, ahead of the work with from Scott.
+So, again, Scott, if you can think about, or if you've got any use cases or any examples best route to sort of cascade this without everyone going on holiday in December going, right, I need a new job January, right, right.
+That's what, you know, so it's one thing to improve efficiencies, but I don't want to lose all the staff members.
+So, yeah, I still think that's a really important
+
+Scott Markham - 53:40
+right.
+I think also, you know, mentioned your 50 million now, you mentioned 100 million, that's twice the size.
+If do twice amount with So their jobs become, or their roles become even more Yeah, to, growth, you know, they'll more of a managing this, it's more of like a managing the workflow situation rather So there'll be twice amount of transactions, potentially, which they to, you know, they may,
+their role may change the implement, the actual implementer to the managing If that makes sense with some training from me, which, you know, it gives them an viewpoint and a stance, feel.
+You know, I mean, they're using technology, but they're the owner of the technology, or if you want to frame that.
+So that they, their output 10 but they still it.
+sense?
+
+Michael Jefferies-Wilson - 54:43
+Yeah, it does, yeah.
+I also think that there's, I need to catch it with Holly and Karen, but I also think that there's an opportunity because at the moment with the ERP.
+implementation what was discovered at the I feel like there's a lot of potential to reallocate staff and or backfill certain there's definitely I feel like it's going to be an opportunity give people a chance to do other tasks potentially like for example if we've got like a three days discovery on
+whatever purchase to pay or something then somebody else a double have a have a have a have a go at purchase to pay for those three days or.
+I just feel like there could be opportunity to potentially move people around a little bit and I know that we've also got like our structure Scott is a bit of a mess between.
+accounts receivable, credit control, like we've got lots of people, Holly, who touch processes at various And obviously you're getting to see now we've got, you know, we've got Gail Curtis who do a lot of overlap, right.
+And I think when we start to look at wider finance function, I think we're going see this across the entire team.
+
+Michael Jefferies-Wilson - 55:51
+I think hopefully you agree, So again, this of, it me that people can certainly move you know, rotate their jobs or pivot jobs.
+I'm saying a lot of words, they're not really getting anywhere, but thanks so much both.
+Really appreciate Thank
+
+Scott Markham - 56:08
+you.
+That's great.
+
+Michael Jefferies-Wilson - 56:09
+Thanks a lot.
+I look forward again.
+Cheers.
+Thanks.
+

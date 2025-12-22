@@ -1,0 +1,792 @@
+BrandedAI X LL
+Metadata
+
+Title: BrandedAI X LL
+Location: Teams
+Date: 2025-11-17T10:00:54Z UTC
+Attendees: Holly Amos, Michael Jefferies-Wilson, Scott Markham
+Link: https://app.meetgeek.ai/meeting/7e58759e-a5d2-4b60-ac79-08c2dd458a58
+Agenda:
+30-Minute General Meeting AgendaOpening and Welcome (1 minute)Quick welcome and introduction to the meeting's objectives.Review of Action Items (3 minutes)Brief update on the status of action items from the previous meeting.Key Discussions (20 minutes)Focused discussion on one or two key issues that need input or decision-making.Time-bound to ensure brevity and relevance.Next Steps (3 minutes)Quick summary of action items arising from the meeting's discussions.Assigning of responsibilities for these items.Wrap-Up (3 minutes)Final thoughts or comments.Confirm the time for the next meeting.
+
+MeetGeek Transcript
+
+Unknown speaker - 00:00
+some of the team members have been completely wrapped up in an ERP rollout.
+So then I was asked if I can support, support Karen and some more of the tactical pieces within the team.
+So my role is supposed to be basically 100% strategic, but I'm finding that it's a, I'm getting I'm getting more and more involved, which is, I think, a good thing.
+So, but yeah, I don't know how you usually run these initial conversations, Scott.
+I'm just going to have an interest around the room or?
+Yeah, that would
+
+Scott Markham - 00:34
+be good.
+Yeah, let's start with that.
+All right.
+Do you want go?
+Yeah.
+Yeah, so.
+Yeah, so I'm Scott, as you know.
+
+Scott Markham - 00:48
+But I don't know whether you've seen the emails I sent to Gavin initially, but I Previously I have had my own coffee business as well, so like functional coffers, coffers with benefits and things like that, but unfortunately we had some really nasty IP litigation against the brand name and we, they
+basically just took us out, which is very sad and very horrible, but nasty Americans with too much money do these things.
+So, but all through my cover businesses that I've had and working life, I've always been into systems and technology and things like that.
+I, yeah, so what I do now is I help companies with their, with their strategies, with their processes, depending what their processes are, you know, whether it's repetitive, causing bottlenecks, hindering, hindering growth, or, yeah, is a more of a longer term project, but in every different aspects
+of the business, but so it's basically using automation with AI as applicable.
+I know AI is a very shiny word.
+Everybody thinks we should be doing everything with AI, but that isn't the case really when it comes down to it, it's basically working out what processes are being done that can be automated with the assistance of AI where applicable.
+
+Scott Markham - 02:12
+And that's where the conversation with Gavin has been with him and I. And that's when, yeah, I initially someone else been dealing with the ERP system.
+Was it Karen maybe or... Is it Gavin's brother?
+Oh yeah, Matt.
+Matt, yeah.
+Yeah.
+couple of things with him, but I think, as you said, Michael, the ERP system was like, we need to get this done.
+That's our big focus.
+
+Scott Markham - 02:41
+So, and then Karen spoke to me about this, some cash reconciling and things like that.
+So that's where this has come from, and this is where... I mean with these conversations we're going typically we start with maybe looking at the whole business and different processes what's that's kind of already happened and we're now at this point where this is the first process or part
+of the business where some processes automating some processes is this part of the business has been it's come up as like the top as to where we start with you guys so Um, kind of leapfrogged and initial call, um, without going down, do you know, is it order processing, is it sales, is it, you
+know, pre- sales, um, marketing elements, or is it, um, custom service and what has been, what has come out as the top priority right now is how we can help you guys with finance, um, processes.
+
+Michael Jefferies-Wilson - 03:52
+Super.
+Thanks, Scott.
+Thanks.
+So Holly, do you want to go next?
+Yeah.
+
+Holly Amos - 04:01
+So I am the transactional finance team leader.
+So within my team, I've got accounts payable, accounts receivable, accounts receivable, bank and expenses.
+So the two areas that we mentioned on Friday was the bank reconciliation and cash posting.
+So cash posting sits within our AR function and bank reconciliation sit within our bank function.
+But yeah, it's kind of ideal of any escalations, any issues, any help needed, cover, sort of anything day- to day or management for those four areas.
+Yeah, sure.
+
+Scott Markham - 04:40
+Very good.
+Thanks.
+Look forward to
+
+Michael Jefferies-Wilson - 04:43
+helping you.
+Thank you.
+Yeah, absolutely.
+Absolutely.
+I think this is going to be very interesting.
+So, so, so Scott, for me, I did a, one of previous roles as a CFO of a small IT consultancy company.
+And they were just at the sort of front end of rolling out some AI offerings.
+
+Michael Jefferies-Wilson - 05:04
+And we did this, we did an AI maturity assessment across like a wide portion of sort back office.
+And it was it was really shocking, right.
+It was really shocking.
+Like, and like a lot of people were quite techy, quite, you know, And it was really, really bad.
+And I remember I had mine wasn't great, but I was surprised at the sort of overall level of understanding, even if some of the standard terms was shocking.
+So I have mentioned to take to Gavin that, you know, I think it'd be interesting to try and get a like a baseline understanding of where the business is on its maturity pathway.
+But basically I've only been with the business for sort of six, seven weeks.
+
+Michael Jefferies-Wilson - 05:58
+I'm essentially an interim CFO on a short- term contract.
+I'm basically looking to support the business on its strategic goals.
+I'm doing a lot of work on M&A side of things at the moment.
+We're looking to divest an element of the business.
+So there's various bits and pieces going on.
+So I wasn't, like I said, I wasn't anticipating stepping into any of the sort of day- day running of the finance function, but I've recently taken on the credit control team leadership, which is seven people.
+I could potentially see it growing because Karen, the finance director, she's just completely swamped on the ERP system.
+
+Michael Jefferies-Wilson - 06:41
+I think we're in discovery at the moment.
+It's hard to say things going well or not.
+Do you know what I mean?
+It's like, especially when the first few meetings are really high level, like, you know, and then you, by the time you get into the detail, you sort of don't realize how much the project is in terms of draining the team resources.
+And I think we've got the data cleansing and migration is going to be absolutely horrendous.
+Like if you look at the offering of the business through sales, Because we can we can lease rent or purchase on sales.
+And then there's like, I think it's like, it's almost like a nine by nine matrix.
+
+Michael Jefferies-Wilson - 07:25
+There's like 80 different combinations of sales on different, it's so complicated.
+It's like, I feel like our internal systems have been built up over the years.
+They work, but only with people like Holly and her team spending huge amounts of time manually churning through information and data.
+And I think the data piece I just touched on this really quickly, Scott, because I think this is really important to me.
+When we have a data query.
+When the data comes back, I often feel like.
+I either I'm unsure on the number, or I've got two sets of data, and I'm thinking, I don't know which is the right one, right?
+
+Michael Jefferies-Wilson - 08:05
+And so for my point of view, when I'm trying to support decision-making, it's really hard then to say, I think we should do this, or I think we should do this when I'm thinking, I don't know that number's right, or I don't know, do you know what mean?
+So, yeah, I think my, just last thing for me, sorry, I'm just chatting on, but I've got really interested in AI.
+I think I've really seen some of the benefits working at that AI company that I mentioned, but there were so many pitfalls.
+It was absolutely, you know, I went to all the big, you know, big, you know, big ticket items that have been in the press with the team.
+And I think it's really great to get someone like you on board and start with some of the more sensible bits and pieces rather than some trying to roll out something massive that's going to, you know, transform the world.
+I just want to do something small, see if it works, when it works, do the next bit and just build on that.
+So, um, yeah, key to see how we get on really.
+
+Scott Markham - 09:01
+Agree.
+And that's, that's the approach that I always recommend is to start with one thing, um, get that done and then build from there because often things come out of woodwork.
+as you do the one thing.
+And also, it's developing at such exponential rate sort of hasn't really been seen before that, you know, we, it's, we do one thing and then when we do the next thing, you know, there's things could have changed which helped the next thing along the way.
+So, yeah, I always recommend, start with the boring stuff, the simple things that happen, get them automated, get AI working to support them, and then It sees where it can lead from there.
+And as you say, data, data is the fundamental, people like think, oh, we just push AI onto it.
+But if you haven't got the data struck, if you haven't got the data managed correctly or, or in a place where it's, you've got your central source of truth.
+
+Scott Markham - 10:02
+You're just putting AI on top of a mess and you're going to get therefore you're going to get all sorts of things out, which is going to be less helpful than it was.
+Yeah, I often start with, where is your data store, you know, what is your data source, where is it?
+You know, because different companies have, some people have different systems and they've got source of truth in three or four different places, and then they're trying marry them all up, and it just... So, I think we're all on the same page, which is good.
+Super.
+
+Michael Jefferies-Wilson - 10:35
+And then probably the last thing I wanted to mention, before we go into some of the details, had a conversation with Holly last week, which I think is really pertinent, which is essentially... I just want to be really careful on the processes that affect people's day to day.
+I'd be great to get some of your some of your feedback about how we potentially what's the pathway to you know making the making the change with the team.
+keeping everyone on board for the journey, you know, pitching the benefits of AI rather than, oh, we're taking out, you know, 20% of your role, you know, I'm sure Holly can find tons for everyone to do, if they lose 10% of their role to AI, right?
+So it's just a case of, yeah, how do you, how do you manage that without everyone just essentially freaking out, right?
+Yeah, see how we get on, just quite keen to cover high level with you
+
+Scott Markham - 11:26
+afterwards.
+Yeah, and I think one thing just to keep in mind is, when these things are presented, it's about making these people, you know, people's lives, or enabling them to be, do better for what they are worth, enabling them to release them to do the creative stuff or the more stuff that they can do that
+systems and AI can't.
+You know, I mean, the human, there's, I never say that it will do 100% of things, you know, if you can get a process automated with AI or whatever, 80%, that is a huge win on itself without, and you still got 20% you might need a human on the loop for an element of it still.
+So it's really about enhancing their work experience day to day to enable them to do more creative things.
+Obviously, as you know, people, some will embrace, some will challenge, some will think otherwise.
+
+Michael Jefferies-Wilson - 12:25
+Yeah, I mean, yeah, it's good one.
+I think, I think, I think, I'm thinking, I'm also thinking that maybe we can get, we can get some sort of use cases put together.
+So I'm, I've got one, I've got one from my previous role where we did, we rolled out some AI automation and some PO matching.
+We basically used to go, it was a recycling company, we used to get it.
+The, the bill used to come in from Biffa, and it had a thousand lines on it, and then we'd have, like, four or five people manually checking each line and oh my god, when I looked at the process, I was like, this is just, how do you, you know, actually get through this, this is awful.
+But actually what I did is when we rolled out some of the AI on just the PO matching, we found that we actually matched about 60% of quite quickly.
+And then actually a lot of it was a case of then the team was actually able to understand the data and go back and work out bits and pieces.
+
+Michael Jefferies-Wilson - 13:13
+And actually the team found a lot of efficiency in terms of pounds from reviewing the information, whereas before it was just crunching it all through, and they didn't actually have time to actually look at any of it.
+It was just like, we've just got a thousand lines to get through, to do it in two days across four people or whatever, and just got to get it done, right.
+So I think that kind of piece on use cases might be quite good.
+Anyway, brilliant.
+Rick's just over to you, Holly.
+Now, I'm obviously haven't seen any of this process myself, so this is going to be, I'm going to go with it, interesting, but looking forward to seeing.
+So
+
+Holly Amos - 13:46
+all fine.
+Okay, so let me just put so much open.
+So for cash posting.
+So what will happen is Curtis will come in the morning.
+He will log into the bank and basically download an Excel, which is this spreadsheet.
+Okay.
+Let me into a view.
+
+Holly Amos - 14:13
+So it has a lot of bits that we don't need, as you've just seen, because they were all hidden.
+So you've got posting transaction status, debit or credit, bank reference, debit account reference, transaction group, transaction detail, additional information, and then the amount.
+And then they add these columns themselves.
+So this column is a yes-no column.
+Is it posted?
+This is where they've posted it to, and this is any comments that they add.
+But what you'll see is the only lines that they're actually interested in is posting date, transaction detail and amount out of all the other bits so they hide them so that they can see what they need to see.
+
+Holly Amos - 14:55
+So inside of the transaction detail, sometimes it will tell you kind of what it's for.
+So like, have I got any in here?
+So like this one here says it's payment for a pro forma.
+So you can search the pro forma number and find the account.
+This one is for a sales invoice.
+You can search the SI number and it will give you the account.
+Others it is just a case of finding either the name or sometimes they'll put an account number, but not always.
+
+Holly Amos - 15:28
+They do have, let me find it for How many customers do we have, Holly?
+Oh, I can tell you that.
+Only two seconds.
+16,108.
+Flipping,
+
+Michael Jefferies-Wilson - 15:48
+hey.
+Very Because I had a look at some of the, I'm obviously stepping into a lot of the credit control processes now, but we seem to have a lot of customers that roll up to group customers.
+That's one thing I don't understand.
+So if like group one pay us, we seem to have like 30 accounts for group but I don't understand.
+So do we get payments from all 30 accounts because they've all 30 accounts have different credit limits, which tells me we've onboarded them all separately, but they're obviously all part of a group.
+Yeah, there you
+
+Holly Amos - 16:19
+Yeah, we've got 169 group one and they are how many?
+don't have a filter on this bit.
+So this
+
+Michael Jefferies-Wilson - 16:31
+is, I think, I think these are BMW dealerships, I think, so this is just tons of different BMW dealerships.
+Yeah, so at the minute
+
+Holly Amos - 16:39
+we've got, how many groups are they in?
+So they are in two.
+Yeah, so they're split across two groups.
+So 3479 and 3029.
+Where are we?
+They don't show
+up
+
+Holly Amos - 17:33
+Yeah,
+
+Michael Jefferies-Wilson - 17:33
+so I guess I guess the question is, are we getting, how many payments are we getting from group one, we have to then match against all those accounts.
+It must be absolutely horrible.
+
+Holly Amos - 17:40
+we can have a look.
+Okay.
+What do they come in under?
+They do literally come into group one.
+So this month so far.
+We've had 18. You'll see, they'll either be singular accounts or like this one was split across five accounts, but I think the issue is you've got 169 customers, but you've got to find where's the invoice?
+Obviously that doesn't really tell you, oh, that one's Jera.
+
+Holly Amos - 18:20
+Oh, it's still group one.
+That one doesn't really tell you a lot.
+So you'd get the remittance and then find the S size in the system.
+and then break down the remittance into the individual accounts and then post each total to the individual accounts to bring it back to the one payment.
+
+Scott Markham - 18:42
+Yep.
+
+Holly Amos - 18:45
+We have sent up communications asking for everyone to include the invoice that they're paying or if they pay multiple invoices to include their account number just to try and help with locating what it is that we're paying.
+There is a, I need to find where it is.
+They do have kind master list and what that does, is it this They can then look up from this sheet, but it only works when the references are the same.
+they've got like an, as they put on here, an aka list.
+And if the reference on the payment matches, it will then bring back the account code that it was posted to last time.
+They have got 551 on here, but obviously, as you can imagine, most people don't put the same reference on every single payment, which then means they still end up looking for them.
+Obviously, there is a chunk of ends.
+
+Holly Amos - 19:55
+They are all payments out.
+So they're not posted by cash posting, but everything else will end up like this.
+So it'll have Y for, yes, it's been posted.
+And then it will have where they posted it and then any comments.
+So that's the first thing they do.
+They download the bank.
+They'll paste it into here.
+
+Holly Amos - 20:16
+They'll look for the account codes and then they'll start posting.
+So to post payments, that's done in the system manually again.
+So you go accounts, sales ledger.
+cash receipts and then inside of cash receipts I'll open one that's done because I don't have an example for you at the moment so you'll enter in the account number you'll put in the bank account it came from and you'll type in the amount you'll check that the dates are the dates and then how you
+received it so was it a card payment a bank like bank transaction and you'll drop that in this box and then you'll go to unposted allocations and click allocate and then you'll pick the transactions that make up that payment so you'll go through the list it'll give you a list of everything that you
+can choose from you'll pick all the ones that you want you'll press add selected and then you can post yeah crumbs
+
+Michael Jefferies-Wilson - 21:19
+okay so you can't you can't you can't bulk up load any of this no so is it that process is for every single line on yeah wow Wow.
+We
+
+Holly Amos - 21:32
+did try to find a way.
+I don't think I've ever seen that We did try to find a way to kind of get the account numbers put themselves in, but obviously, as you could see, is harder when the references change.
+Let me just double check in here.
+So the system
+
+Scott Markham - 21:54
+you're using, what is that
+
+Holly Amos - 21:55
+app server?
+It's called Eagle.
+Eagle eagle it is on an app server but yeah the system's called eagle yeah as far as I'm aware I've never seen you can do a dd import actually give me a second could we use that in the same way just change the references so eagle is good in the sense of you can build anything you want into Obviously
+the system itself isn't quite where we want it to be.
+But you can add things to So if you wanted to be able to import, you can just add an import.
+Yep.
+I'm just trying to find.
+
+Michael Jefferies-Wilson - 22:50
+We'll get we'll get just as a bit of a sideline, we'll get We're struggling to get any IT dev time on anything on Eagle.
+Joe and the CRP implementation, which is pretty much the next like 14, 15 months probably.
+
+Holly Amos - 23:07
+I know this does go in completely different.
+thought maybe the DD import would be where you could put customer number, invoice, tax day, blah, but this is completely different to how you get the information.
+So the DD import function isn't something that we could use to import cash receipts.
+Yes, at the minute it is all done manually one by one.
+You find the code, you post the cash, you allocate the cash, and then you post the transaction, and then you come back to the sheet and obviously mark it down that you posted So
+
+Michael Jefferies-Wilson - 23:52
+I'm assuming there's going to be error in this process as well.
+So what happens if something gets posted in the wrong place?
+If
+
+Holly Amos - 23:59
+you post anything into correctly, this is kind of the only place in Eagle where you can just press reverse and it will unallocate and remove the payment.
+Everywhere else in the system, this button doesn't actually exist, but on cash postings it does.
+Sorry,
+
+Michael Jefferies-Wilson - 24:20
+Scott, I'm sure you have questions.
+I'll try and keep
+
+Scott Markham - 24:23
+going.
+Yeah, yeah, who supports this for Is it internally or do you have an external company?
+
+Holly Amos - 24:35
+We have our own dev team and Matt, the gentleman that you've already spoken to at some point has kind of more knowledge on it.
+We do have an external system administrator, I guess, Excel.
+So anything we don't know how to do ourselves or anything we don't know the answers to, we'll get sent to Excel and they will come back with an answer.
+But think anything that we add on or create is mainly done by our internal team.
+Yeah, You can double check that with Matt just to be certain.
+But yeah, think we manage the system majority of the time ourselves.
+Brilliant.
+
+Scott Markham - 25:21
+So on how are things getting put on to equal to start with that then need to be matched.
+
+Holly Amos - 25:31
+Do you mean how do the invoices get on the system?
+Yeah.
+So there are few ways.
+So we have
+billing requests.
+So what happens is bill and request starts from a call case actually.
+So a requirement comes into the business so that might go to customer services, it might come through the portal, it might come through sales, kind of it will come into the business.
+
+Holly Amos - 26:19
+And then the task for so this is for services.
+The task will then be created on a call case and that just assigns a engineer or vending operative provides the information to the customer of who will be attending when they'll be attending and then it gives the information to the engineer or operative to state what they're going there to do.
+that will create call case.
+Obviously, call cases doesn't sit within finance, so I'm too clued up on But what happens is once the case is completed and it becomes billable, it then becomes a billing request.
+So, billing requests are then monitored by a lady called Haley in the operations team.
+So, again, not in finance, but she will go through.
+She'll verify all the details, verify the visit, add in any purchase orders, check the pricing.
+
+Holly Amos - 27:15
+And then when she is happy, she will release them, so what that would do is that will then make them available to finance.
+So what finance then do they will, let me take out, let me go into one of these.
+So
+finance will then receive, you'll see in here, these are requires invoicing and they are not, these ones are on hold actually, that's I don't have any rental.
+Not on hold, but does not require invoicing.
+So you'd get a list like this basically, and it would be transactions that do require invoicing are not on hold and not pending don't have any queries.
+And then, which button do I that invoice two date yeah so then finance this is where finance starts so finance will come in they'll go from each of those sections and they'll start with a date so for example if we're billing today we'll pick today so we'll say anything due to be invoiced up to today
+
+Holly Amos - 28:37
+then press okay and what that will do that will create a list of all the invoices that need to be sent and then it will invoice It will automatically post So on our sales invoices.
+You'll see an active and complete.
+That's a maintenance But what will happen is it will come on to the daybook.
+It will obviously be assigned all of its details and it will automatically come in as active.
+So don't have to then go through and post So those ones come from billing requests.
+So call case is created which creates a billing request, which then creates a sales invoice.
+Other ways that we do our billing is manually.
+
+Holly Amos - 29:48
+So if we are new.
+Do we have any?
+Yes.
+So tower is something that's done by our CCO team.
+That is for the rental of our equipment.
+So tower will sit on new status until the contract has been signed and the equipment has been installed.
+And then the CCO team will come in, check the details are still correct.
+
+Holly Amos - 30:17
+make any amendments from maybe there was extra charges or they got a different machine, anything along those lines, and then they will confirm those ones out themselves.
+We have, is this a recharge or is this a maintenance contestable Oh, I was looking for that, actually.
+I'll come back to that one.
+I'll keep it.
+Then we have recharges.
+So we will get a purchase invoice into the purchase ledger And then Jade will go through, take the details of the purchase side and manually create a sales invoice.
+So she'll put in the account number.
+
+Holly Amos - 30:58
+If it's got multiple sites, she'll pick which site we are charging.
+If they have a price list, it will put the account code and then deliver to.
+So if it's got site addresses, you can pick a site address.
+If it wants to go to head office, you can pick a main address.
+As you'll see in here, so main address.
+And then contact, so that's the invoice email address.
+And then they will then go into invoice items and add in what it is that we're recharging.
+
+Holly Amos - 31:29
+Obviously when we recharge, we add on our cost.
+So we'll take the suppliers cost and then, but then we will put in a different value to the customer because we charge them more than we get charged, I would hope.
+Other things that we allow is into company.
+So have a various bits that we have to charge over to our other companies.
+They are raised manually and the information comes from our IFC team.
+We also have consolidated invoicing.
+So inside of billing requests, there is consolidated.
+
+Holly Amos - 32:13
+And what will happen is as these customers order.
+Their bill and request will sit under consolidated and we will issue them one invoice per month.
+So when we get to the end of the month, Jade will come in here, she will go through just check that all the correct suppliers are in She will then select all the transactions, add in a date of the end of the month.
+And what that would do is that will give one invoice for every.
+So like all of these pen dragons will all go on to one invoice.
+Rather than them receiving multiple invoices every Yeah.
+What other billing do we have?
+
+Holly Amos - 32:51
+We have vending.
+So we have two different lots of vending information.
+So you will have vending cash.
+So that's a report taken out of a third-party system called Vend Manager.
+that is then manually invoiced by Jade to our internal vending account so she will raise one invoice for every site that banked cash and the other two vending options so you have the normal vending so that is Vend Manager that again is cash Well, not cash, sorry, that's clicks.
+So that is the purchase of drinks or consumable items through vending machines.
+That is exported from Vend Manager by Erin and then loaded into Eagle via a import.
+
+Holly Amos - 33:55
+Yeah, vend Manager consumables import.
+And then we have vending for NIACs.
+So NIACs is our card income.
+So all of our vending machines have Niax card readers and Niax will give us a weekly invoice with a breakdown of spend and charges and we will process that into the system monthly.
+So we will compile each month, put those into the system, and then do any reimbursements to customers.
+We also receive money from NIACs.
+So we charge our customers, we get, no, sorry, that is internal.
+
+Holly Amos - 34:40
+We post the NIACs transactions.
+We receive money from NIACs into our bank account and we receive charges from NIACs, which are automatically deducted from the payments that they make to Yep.
+We also have... Culligan.
+So
+
+Scott Markham - 34:59
+just on the Niax, sorry, just on the Niax.
+You've got the money coming from them.
+do you have to then match the payments that one chunk coming in from them to a number of different items or not different payments?
+
+Holly Amos - 35:16
+So the way that we do Niax at the minute, just because of the way it works in Eagle.
+is we'll post the customer or the internal vending invoices to the customer accounts.
+We will then post the payments to the contra account.
+So we'll have an SI and an SCT, which cancel it off of the customer ledger.
+And then the contra transactions transfer over to contra account.
+And then when we process the purchase invoices, They also go against a contra because then the two contras and the payment will all clear back down to zero.
+Yeah,
+
+Scott Markham - 35:57
+enough.
+Okay.
+What was the
+
+Holly Amos - 36:00
+next bit of billing?
+So the next bit of billing we have is Kulligan and that is changing, but that is our water supplier.
+So we get invoices from them for us to pay and we get a backing sheet to charge our customers.
+So we'll go through that, we'll check the prices, we'll check all the information is correct, we'll query that with them.
+And then once we are happy with we will import it.
+So their backing sheet comes in the layout of our importer.
+So it will be, we'll do everything we need to do.
+
+Holly Amos - 36:31
+And then when we are ready, again, we will put the spreadsheet into our billing sales invoices as an import, and it will create us sales invoices on new status.
+I think that is all of our billing options.
+Obviously there's manual invoices, if anything pops up that we just need manually charge over.
+yeah, majority of stuff will either come from a billing request, our vending system, our vending suppliers, our water suppliers, the CCO team for our rental equipment.
+Yep.
+Hopefully that is, if you think, off the top of my
+
+Scott Markham - 37:16
+That's good.
+So on that spreadsheet, the initial spreadsheet that you download from the bank, obviously that's sorted into income and outgoings and then correct things Where is the exact next place they go to find items that they need to put in to match into the new green
+
+Holly Amos - 37:39
+So what they would do is.
+So for example, if we take one that actually has some information So this one here, they can take the SI number, put it into.
+Thousand invoices it will give you the account They can then go and look on that account to check that the balance.
+Oh, where am going?
+There, that is what The balance is available.
+Obviously we do have direct debit customers that will pay us in error, or some people might have a pro forma and then pay the VAT invoice as well, on and so forth.
+But if the, so the one that we're looking at is here, and you can see that the, was it gone, the SI that they want is still outstanding and the value that they've paid matches the invoice.
+
+Holly Amos - 38:37
+So they know that this is the account for And then can post this one with you What they would then do is go into cash receipts and they'd go new.
+They'd put that account code They would then put the value in, which is this one here, 138.46. They'd check that their dates are still correct, which, what date am I on That's the 17th.
+But if I play with this, it's going to break it for Curtis.
+So the way that this system works you change this date, it will change it on every cash posting thereafter.
+So let me just check that he has finished on the 14th.
+He has, he is now on the 17th, so that's Yeah, the way the system works If I change it, it will change for everyone.
+So, like, if I change this to card, it will change for everyone.
+
+Holly Amos - 39:37
+If I change the dates, it changes for everyone.
+It doesn't kind let you stay on what you're on if someone else changed But yeah, so the bank account is the main bank account.
+If you are posting from another bank account, you can change But once you put your dates in, it is a bank transfer, so you can press save.
+And then... you can allocate.
+So this was the invoice that we wanted.
+Obviously, if there was multiple, you'd go down and click the ones that you wanted.
+You press add selected.
+
+Holly Amos - 40:10
+And then will say unposted allocations and remaining.
+So I know that they all match.
+I can then post And that'll go to zero, because I've got nothing left to allocate.
+Everything is posted and I've got nothing left to So that one is now posted so I can go back into here and I just put a Y so if anyone else was working in here or if I needed to look back, I know that I've posted this and I've posted it to this account.
+There were no issue, so I have no other details to add for But it is kind of as simple as that for the ones where it does tell If it doesn't tell you, you can kind of search in the system, so we could take that into the customer.
+Within Eagle, if you put a star, it will search for anything surrounding what you're looking Yep.
+But this one here did bring up a customer.
+
+Holly Amos - 41:13
+So if we have a look at this customer.
+It feels like it.
+We have got outstanding invoices.
+So now we look at what they So they paid us 485.64, as we can see here.
+and SI.
+this invoice is for that exact And this is the only customer with this name.
+So we could then go on and post this transaction.
+
+Holly Amos - 41:51
+If the transaction doesn't come up.
+So if I typed this in and there was no supplier.
+We then have to do further investigation into maybe have a look at previous months, have a look kind of anything that comes that looks remotely similar to it, so that you can search in the actual sheet.
+So we've got only those two, but if you was then to take it into the master sheet that they have, you may be able to find additional information Where
+It will be able to see in here this customer has used this reference on previous payment.
+So we can see here they paid us in September on the same reference account 21091. Where did we put And then you'll see in here that is still 29011. So sometimes you can do it You can stick a V lookup on it first.
+Depends what it is that you're posting.
+
+Holly Amos - 43:10
+Sometimes you'll get remittances in and then you can see from the value.
+like when you have.
+don't know, group one, like we mentioned earlier, you'd look for the remit before you tried to post the payment because it could be across any of the 169 accounts.
+And where
+
+Scott Markham - 43:28
+does remit come
+
+Holly Amos - 43:31
+The remittances come into the remittances inbox.
+So this inbox is just all of the remittances that we've received for the payments or the upcoming payments.
+This is worked by Curtis.
+So he posts the cash and he manages the remittance inbox.
+So when he's posting his cash, if he has a remittance for it, he can use If he doesn't, and it's just one for one, or you can see the exact value or it states the SI number You could then do it that he doesn't have, you'll see in here it says email for a remittance does.
+He did this morning have remit written in these because he had a remittance for them to post from, but he's now found the accounts.
+I don't see any other unposted coded them yet But yes, so that is also a way that he can look for If he's got the remittance, he can mark it down on here as remit, and then he knows that when he comes to post he can use the remittance.
+
+Holly Amos - 44:40
+Yeah,
+
+Scott Markham - 44:42
+So he has to manually go and look at that inbox to find the remittance.
+The remittances are not being stored downloaded entered into a spreadsheet
+I think, My mind is wearing, so
+
+Holly Amos - 45:05
+it's in a good way.
+Ask whatever you need to know, it's absolutely Okay.
+
+Scott Markham - 45:16
+And how often would he download this sheet?
+Is this a daily thing So he
+
+Holly Amos - 45:21
+downloads it in the morning to do his first lot of cash posting.
+So you'll see, let me go to Friday.
+So on yeah, so on Friday he downloaded his first lot of transactions, so you'll see, he then posted those.
+And then when it got, when he'd finished posting those, which at this transaction, he then done a second pull the bank, which then gave another, where the break there?
+I think there was then another 57 transactions that So he'll always do a first pull of Once he's posted those, depending on the time, he will then do a second or a third pull, which will just pull through any additional transactions that have come in since So, like, as I said, on Friday, done the
+first pull.
+There was then another 57 transactions come then he done a second pull, posted those.
+
+Holly Amos - 46:23
+And then today, when he pulled the bank this morning, there was still... 30 transactions that had come in after his final Friday that then got posted Monday and the Monday pull come in which was all of these so once he's posted these what he will then do again is he will do another pull probably for
+Monday afternoon depending on how many is on that he will then post those and see if he needs to do another pull up
+
+Scott Markham - 47:02
+Okay.
+And can you different exports from Eagle
+
+Holly Amos - 47:12
+From Eagle.
+Hmm.
+Depends what screen you're you'll have like export grid buttons.
+You might have
+Export transactions, export grids, or you can select transactions and export those.
+But that is all dependent on what screen.
+Because every screen has different buttons.
+
+Holly Amos - 47:51
+Okay.
+You can export a grid.
+Sales invoices.
+You can export grid sales credit notes, you can export grid.
+So it looks like on these three transactions, you can export a grid.
+Can you get our customers?
+
+Scott Markham - 48:17
+And will there be, will there like a sequence he goes through time, as in he always goes If, for instance, the sale, obviously, if the sale, if you've got a sales number, sales invoice number, he can go straight to sales Other than that, is really, will he go straight to customers?
+on the customers, on the customers, does it outstanding money owed and money outstanding?
+
+Holly Amos - 48:51
+No, not unless Going to report, but you can, there is a live link sheet, credit control user, where debt 2025, right, let's try that
+Right.
+That's a broken sheet.
+Where would it
+So what there is, is there is a...
+Yeah, I'm not where the sheet gone exactly, there's a live link sheet that will tell you kind of all the customer's information and then the balance is owed, you can run things like the age debt as reports in various ways, kind of depending on what you want it split by, but yeah, IT have already
+created a sequel which is refreshable and it will give you all transactions per customer with balances and aging and all of those bits of information, but we just have to ask credit control because they seem to have
+
+Scott Markham - 50:51
+Fine, and yeah, so that's equal report.
+Yeah, it's downloads into Excel,
+
+Holly Amos - 50:56
+Yeah, so it's all on an Excel spreadsheet, you just right click refresh and it will update the information Yeah,
+
+Scott Markham - 51:08
+Fine.
+And the bank, which
+
+Holly Amos - 51:21
+This one that we're looking at the Yeah.
+Is, so it's LL01, which is the current account.
+So it's the liquid line main bank
+
+Scott Markham - 51:34
+is that when like most of action
+
+Holly Amos - 51:40
+Yeah, so in liquid line limited, we have the liquid line limited, we have euro bank account, which is mainly where we pay our suppliers and purchase currency for euros.
+We have LLDO, which is the dollar bank account.
+So again, that's mainly for paying our suppliers and purchasing currency.
+We then have a deposit account, which is under, think it's the instant access.
+I think it's 12, 22. Yeah, instant access online And that one is where we So we get better interest using that account.
+So at the end of, at the start of each day or the end each day, someone will go into the bank account, look at what's in there, look at what's coming out and then clear any additional funds into the instant So that transactions going in and out of, but they are posted by the person that's moving
+money.
+
+Holly Amos - 52:53
+So we will just move money in between our accounts as and when needed.
+So that doesn't any customer or supplier payments that does just have money going in and out between ourselves and then it will have one interest payment around the 15th or the 18th month.
+So we have main bank account deposit dollars euros and then Ireland we also have a bank so in Ireland it's under the same name so it's under LL01 and the same code 12.12.05, it's the bank of Ireland current account and that is the only bank account we have in our island So the bank of Ireland bank
+account is done daily and the UK LL01, so main bank account is done daily.
+But they are the same.
+So they'll go into the bank, download the transactions, find codes, post the transactions.
+And obviously the Eagle side of things is the same on both And is
+
+Scott Markham - 54:02
+that onto the bank or is there a link between Eagle
+
+Holly Amos - 54:06
+No.
+So they physically log into the bank account and then download the export and paste it into the spreadsheet.
+
+Scott Markham - 54:17
+Okay.
+And is Eagle just for accounts Eagle
+
+Holly Amos - 54:24
+is used for the entire So accounts has their tab and then you have other things like material management has suppliers, requisitions, purchase orders, the GRN system, stock system, query system.
+think
+like the warehouse, their scanners will scan in and out transactions, purchasing, create all like the product codes, the part codes.
+Eagle does have a searchable function.
+So if you know what you're looking for, obviously you can look for it in there.
+It's not just what is listed Everything goes into multiple options and screens, I probably don't have access to half If you wanted to know what is actually an eagle, it would probably be an IT question, because they could then you everything available within eagle.
+
+Scott Markham - 55:21
+So what you, all the things that on the day- day basis that we're looking at first happen in the tab.
+
+Holly Amos - 55:30
+will be in one of these free journals, purchase ledger or sales ledger is kind of where team sits
+
+Scott Markham - 55:41
+Brilliant.
+the new ERP system that's being is this affecting this I've
+
+Holly Amos - 55:49
+had no involvement in the new ERP
+
+Michael Jefferies-Wilson - 55:53
+What do you mean by affecting Scott?
+
+Scott Markham - 55:57
+is this, it will either be feeding into the new ERP system or part of it
+
+Michael Jefferies-Wilson - 56:02
+No, no, we're spending seven figures on So
+
+Scott Markham - 56:06
+will do, will that do accounts well?
+Yeah.
+
+Michael Jefferies-Wilson - 56:11
+But the point is that that's not going to be live until January 27 at the very earliest.
+So it's a case know, what can we do roll out some improvements to support a team, Where we don't have, dependency on IT
+But yeah, so basically there's a there's a there's a there's much a desire not extras at the which is why I think it's useful bringing yourself into the third parties to support Do we need another on this or can we just wait to hear back from you?
+What do you
+
+Scott Markham - 57:01
+think would what would be super helpful if I could be given access Obviously we signed NDAs and anyway.
+I do a access agreement too Just so that there is paperwork between the reason I was asking is I want don't want to be.
+I want do too much that then is not useful in two years time or years If you know what mean, I want to I want to make sure assist with systems that are going to be super useful between now then that either will be able to roll over to the new system without, you know, I mean, I don't want you to, I
+don't know how to explain the unnecessary step.
+So if I can make it work as simple as possible, as quick as possible the least, the most cost effective, that, if that makes you.
+definitely.
+Yeah.
+
+Scott Markham - 58:04
+The most effective, but the most cost Yeah, yeah, that's why I was asking when the new system is going to be installed and how it's going to implement this, because there's, know, you, I don't expect Gavin really wants to invest huge amounts of into something that potentially the uni system will do
+automatically, for instance.
+I don't know, yeah, having a conversation about that, but I can see there's a huge if through some simple exports, imports, and then AI manipulation, we make the system, you know, do 70, 80% of what's happening now automatically, that's going to huge advancement,
+
+Michael Jefferies-Wilson - 58:42
+Yeah, yeah, no, I agree, I agree.
+And I think the other piece for me is I've, you know, the last time I did an ERP implementation, you know, go live was probably of maybe 70% and number of bolt-ons, number of workarounds, there was probably another three to six months of, you know, bedding things and I mean, but that's, you know,
+six months, that would be, that would put us into, July 27, right, significantly far away from now want to spend some money now to make some improvements.
+But like you said, we need to be on what that like, given frame.
+
+Scott Markham - 59:29
+that's super helpful.
+Yeah, I think to enable me to this, come up with the best proposal.
+I think if I definitely see there's an option way this happen easier and smoother.
+If I, but what, it would really helpful if I could have access even if it's for a short space to, to know enable me to work out what can and can't be exported and imported and up.
+I think it would make us be able the, and then result faster.
+
+Michael Jefferies-Wilson - 01:00:07
+Yeah, super, I'll ask Matt.
+I also think, I think it'd be good to get another conversation in on Can we get in, we, what are the diaries like for you?
+What's Wednesday
+
+Holly Amos - 01:00:26
+I can be Wednesday afternoon.
+Conveniently, that's the only day I don't have anything in
+
+Michael Jefferies-Wilson - 01:00:30
+How Scott?
+
+Scott Markham - 01:00:34
+Yeah, fine.
+I can guys.
+
+Michael Jefferies-Wilson - 01:00:36
+Two, two.
+two words, one Yeah, either.
+right, great.
+I'll put that up at the end now.
+And I think the other bit that I think I had on my list that we didn't cover, Holly, credit notes how payments come through from with remittances and that sort Quite often customers will just pay an amount and then they'll just be really unclear and what it relates it can be a bit of a faff.
+I know we've got a piece moment ongoing about credit notes and quality control with invoicing and all this sort stuff.
+So it'd be to touch that with Scott on Wednesday, but I'll put that meeting in now.
+
+Michael Jefferies-Wilson - 01:01:17
+And yeah, look forward to continuing
+
+Holly Amos - 01:01:22
+Yeah, no, that's wonderful.
+Thank much.
+
+Scott Markham - 01:01:25
+Excellent.
+Yeah, I think just on the quickly on the remittance thing, I think that would be a simple Initial simple automation, I think that all remittances are being stored onto spreadsheet automatically.
+So they in, they're on spreadsheet, therefore that can be matched up very, very quickly with the cash accounts on the bank without having to keep going back to the remittance, looking through That should be an automated process where they're being recorded therefore that out quite matching to point
+even 100%.
+Before to Brilliant.
+Okay.
+Thank you.
+
+Scott Markham - 01:02:01
+Thank you.
+Thanks.
+Bye.
+Thanks,
+
