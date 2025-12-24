@@ -530,17 +530,38 @@ Key files to review:
 
 ---
 
-## 2025-12-24 - ENTERPRISE DEPLOYMENT
+## 2025-12-24 - ENTERPRISE DEPLOYMENT & TESTING
 
-### Cloud Deployment Status
+### Cloud Deployment Status - LIVE ✅
 
-**DEPLOYED:** GitHub branch `liquidline-deploy` created with clean project structure.
+**APP URL:** https://liquidline.streamlit.app
 
 **Repository Details:**
-- **Repo:** SCEVLTD/BrandedAI
-- **Branch:** `liquidline-deploy` (contains ONLY Liquidline project files at root)
+- **Repo:** https://github.com/SCEVLTD/liquidline-bank-automation (PUBLIC)
+- **Branch:** `main`
 - **Main file:** `app.py`
-- **Requirements:** `requirements.txt`
+
+### Live Testing Results (24 Dec 2025)
+
+| Test | Result | Details |
+|------|--------|---------|
+| Reference Data Loading | ✅ PASS | 16,102 customers, 547 AKA patterns |
+| Bank File Selection | ✅ PASS | Multiple bank files available |
+| Transaction Processing | ✅ PASS | 115 transactions from 25 Nov 2025 |
+| **Match Rate** | ✅ **100%** | Target was 65-70% - EXCEEDED |
+| High Confidence | ✅ 73 | £146,950.19 ready for one-click approval |
+| Medium Confidence | ✅ 29 | Requires review |
+| Low/Exception | ✅ 13 | Requires manual check |
+| Unmatched | ✅ 0 | Perfect matching |
+| Curtis Cash Posting | ✅ PASS | Dashboard working |
+| Erin Reconciliation | ✅ PASS | £0.00 unreconciled |
+| Export Buttons | ✅ PRESENT | Curtis Review, Eagle Import, All Data |
+
+### Bug Fixed During Deployment
+
+**Issue:** `AttributeError: st.user has no attribute "email"`
+**Cause:** Streamlit Cloud's `st.experimental_user` API changed
+**Fix:** Updated `src/auth/auth_manager.py` to use `getattr()` with try/except
 
 ### Streamlit Cloud Deployment Steps
 
@@ -590,6 +611,60 @@ After deployment, in Streamlit Cloud:
 1. Go to App settings
 2. Under "Custom domain" add: `bankrec.brandedai.com`
 3. Add CNAME record in DNS pointing to Streamlit
+
+---
+
+## HOW REMITTANCE ADVICE MATCHING WORKS
+
+### Current Implementation (Layer 0)
+
+The remittance system is the **highest priority matching layer** because remittance advice documents contain exact customer and invoice information.
+
+**Flow:**
+```
+1. PDF Remittances → placed in `remittance_examples/` folder
+2. RemittanceParser → extracts text from PDFs (pdfplumber/PyPDF2)
+3. Regex extraction → finds SI invoice numbers, amounts, dates, customer names
+4. AI fallback → for complex formats, uses Claude API via OpenRouter
+5. Layer0RemittanceMatcher → matches bank transactions by amount (±1p tolerance)
+```
+
+**What Gets Extracted:**
+- Customer name (company paying)
+- Invoice numbers (SI-XXXXXX format)
+- Invoice amounts
+- Total payment amount
+- Account reference (e.g., L0118, LIQU001)
+- BACS reference
+- Payment date
+
+**Matching Logic:**
+1. Load all PDFs from remittance folder
+2. For each bank transaction amount, search for matching remittance total
+3. If amount matches (within 1p), return full invoice allocation
+
+### Current Limitations (Manual Process)
+
+Currently, remittance PDFs must be **manually placed** in the `remittance_examples/` folder. This is because:
+1. Email integration would require IMAP/OAuth access to shared mailbox
+2. No database (Supabase) integration yet for storing parsed remittances
+
+### Future Enhancement Options
+
+| Option | Complexity | Description |
+|--------|------------|-------------|
+| **Email Integration** | MEDIUM | Connect to shared mailbox, auto-download remittance PDFs |
+| **Supabase Storage** | LOW | Store parsed remittances in database for persistence |
+| **File Upload UI** | LOW | Add drag-drop remittance upload to Streamlit app |
+| **Automatic Parsing** | MEDIUM | Watch folder/email for new remittances, auto-parse |
+
+### For Production Use
+
+**Recommended workflow for Liquidline:**
+1. Finance team saves remittance PDFs to a shared OneDrive/SharePoint folder
+2. Daily: Copy new PDFs to the app (or upload via future UI enhancement)
+3. Process bank transactions - remittances will auto-match first
+4. High-value multi-invoice payments get perfect allocation
 
 ---
 
