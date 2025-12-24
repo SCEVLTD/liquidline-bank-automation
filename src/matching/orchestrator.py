@@ -2,7 +2,7 @@
 Liquidline Bank Reconciliation Automation
 Matching Orchestrator
 
-Coordinates the 4-layer matching system and manages
+Coordinates the 5-layer matching system and manages
 the overall matching workflow.
 """
 
@@ -15,6 +15,7 @@ from ..models.transaction import (
 )
 from ..data.customer_loader import CustomerLoader
 from ..data.aka_loader import AKALoader
+from .layer0_remittance import Layer0RemittanceMatcher
 from .layer1_si import SIInvoiceMatcher
 from .layer2_aka import AKAMatcher
 from .layer3_fuzzy import FuzzyMatcher
@@ -25,9 +26,10 @@ logger = logging.getLogger(__name__)
 
 class MatchingOrchestrator:
     """
-    Orchestrates the 4-layer matching system
+    Orchestrates the 5-layer matching system
 
     Processing order:
+    0. Layer 0: Remittance Matching (highest priority - exact data from remittances)
     1. Layer 1: SI Invoice Pattern (highest accuracy)
     2. Layer 2: AKA Sheet Pattern (known mappings)
     3. Layer 3: Fuzzy Name Match (customer database)
@@ -42,7 +44,8 @@ class MatchingOrchestrator:
         customer_loader: Optional[CustomerLoader] = None,
         aka_loader: Optional[AKALoader] = None,
         api_key: Optional[str] = None,
-        ai_provider: str = "openrouter"
+        ai_provider: str = "openrouter",
+        remittance_folder: Optional[str] = None
     ):
         """
         Initialize the orchestrator with data sources
@@ -52,11 +55,14 @@ class MatchingOrchestrator:
             aka_loader: AKA pattern sheet data
             api_key: API key for LLM (Layer 4)
             ai_provider: "openrouter" or "anthropic"
+            remittance_folder: Path to folder containing remittance PDFs
         """
         self.customer_loader = customer_loader
         self.aka_loader = aka_loader
+        self.remittance_folder = remittance_folder
 
         # Initialize matchers
+        self.layer0 = Layer0RemittanceMatcher(remittance_folder=remittance_folder)
         self.layer1 = SIInvoiceMatcher()
         self.layer2 = AKAMatcher(aka_loader)
         self.layer3 = FuzzyMatcher(customer_loader)
@@ -68,9 +74,14 @@ class MatchingOrchestrator:
         if aka_loader:
             self.layer2.set_loader(aka_loader)
 
+        # Load remittances if folder provided
+        if remittance_folder:
+            self.load_remittances(remittance_folder)
+
         # Statistics
         self.stats = {
             "total_processed": 0,
+            "layer0_matches": 0,
             "layer1_matches": 0,
             "layer2_matches": 0,
             "layer3_matches": 0,
@@ -91,6 +102,16 @@ class MatchingOrchestrator:
         self.aka_loader = loader
         self.layer2.set_loader(loader)
 
+    def load_remittances(self, folder: str) -> int:
+        """Load remittance PDFs from a folder"""
+        count = self.layer0.load_remittances(folder)
+        logger.info(f"Loaded {count} remittances from {folder}")
+        return count
+
+    def add_remittance_text(self, text: str, source: str = "manual"):
+        """Add a remittance from text (e.g., email body)"""
+        return self.layer0.add_remittance_text(text, source)
+
     def match_transaction(self, transaction: Transaction) -> Transaction:
         """
         Process a single transaction through the matching layers
@@ -109,6 +130,36 @@ class MatchingOrchestrator:
 
         # Try each layer in order
         match_result = None
+
+        # Layer 0: Remittance Matching (highest priority)
+        remittance_match = self.layer0.match(
+            amount=abs(transaction.amount),
+            transaction_detail=transaction.transaction_detail or "",
+            date=str(transaction.post_date) if transaction.post_date else ""
+        )
+        if remittance_match and remittance_match.confidence >= 0.85:
+            # Create MatchResult from remittance
+            from ..models.transaction import InvoiceAllocation
+            invoice_allocations = [
+                InvoiceAllocation(
+                    invoice_number=inv_num,
+                    invoice_amount=0.0,  # Unknown from remittance alone
+                    allocated_amount=0.0
+                ) for inv_num in remittance_match.invoices
+            ]
+            match_result = MatchResult(
+                customer_code=remittance_match.customer_code,
+                customer_name=remittance_match.customer_name,
+                confidence_score=remittance_match.confidence,
+                confidence_level=ConfidenceLevel.HIGH,
+                match_method=MatchMethod.LAYER_1_SI_INVOICE,  # Treat as SI since we have invoices
+                invoice_allocations=invoice_allocations,
+                match_details=f"Matched via remittance: {remittance_match.remittance_file}"
+            )
+            self.stats["layer0_matches"] += 1
+            transaction.match_result = match_result
+            self._update_confidence_stats(match_result)
+            return transaction
 
         # Layer 1: SI Invoice Pattern
         match_result = self.layer1.match(transaction)
@@ -239,6 +290,7 @@ class MatchingOrchestrator:
             "match_rate": (total - self.stats["unmatched"]) / total * 100,
             "high_confidence_rate": self.stats["high_confidence"] / total * 100,
             "layer_breakdown": {
+                "layer0_pct": self.stats["layer0_matches"] / total * 100,
                 "layer1_pct": self.stats["layer1_matches"] / total * 100,
                 "layer2_pct": self.stats["layer2_matches"] / total * 100,
                 "layer3_pct": self.stats["layer3_matches"] / total * 100,
@@ -250,6 +302,7 @@ class MatchingOrchestrator:
         """Reset statistics counters"""
         self.stats = {
             "total_processed": 0,
+            "layer0_matches": 0,
             "layer1_matches": 0,
             "layer2_matches": 0,
             "layer3_matches": 0,

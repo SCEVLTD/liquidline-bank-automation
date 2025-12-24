@@ -19,9 +19,14 @@ supabase>=2.0.0
 # Utilities
 python-dotenv>=1.0.0
 pydantic>=2.0.0
+requests>=2.31.0
 
 # Excel Output
 xlsxwriter>=3.1.0
+
+# PDF Processing (for remittances)
+pdfplumber>=0.10.0
+PyPDF2>=3.0.0
 
 # Date handling
 python-dateutil>=2.8.0

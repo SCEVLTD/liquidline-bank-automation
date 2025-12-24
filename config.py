@@ -19,8 +19,20 @@ OUTPUT_DIR = BASE_DIR / "output"
 # Create output directory if it doesn't exist
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-# API Keys
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
+# Helper to get secrets from Streamlit Cloud or environment
+def get_secret(key: str, default: str = "") -> str:
+    """Get secret from Streamlit Cloud secrets or environment variable"""
+    try:
+        import streamlit as st
+        if hasattr(st, 'secrets') and key in st.secrets:
+            return st.secrets[key]
+    except:
+        pass
+    return os.getenv(key, default)
+
+# API Keys - supports both Streamlit Cloud secrets and environment variables
+ANTHROPIC_API_KEY = get_secret("ANTHROPIC_API_KEY", "")
+OPENROUTER_API_KEY = get_secret("OPENROUTER_API_KEY", "")
 
 # Data Files
 BANK_DATA_DIR = DATA_DIR

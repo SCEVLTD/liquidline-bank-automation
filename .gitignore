@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Output files (regenerated)
+output/*.xlsx
+output/*.csv
+
+# Video recordings and frames (too large for git)
+video_recordings/
+*_frames/
+
+# Streamlit secrets (never commit!)
+.streamlit/secrets.toml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+nul

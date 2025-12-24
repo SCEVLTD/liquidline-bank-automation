@@ -161,10 +161,39 @@
 
 | Layer | Expected | Actual | Status |
 |-------|----------|--------|--------|
+| **Layer 0 (Remittance)** | NEW | TBD | ✅ IMPLEMENTED - Highest priority |
 | Layer 1 (SI Invoice) | ~23% | 23.6% | ✅ Working |
 | Layer 2 (AKA Pattern) | ~25% | 3.4% | ✅ Working (realistic for patterns) |
 | Layer 3 (Fuzzy Name) | ~30% | 48.9% | ✅ FIXED - Exceeding |
 | Layer 4 (AI) | ~22% | 2.8% | ✅ FIXED - Working |
+
+### NEW: Layer 0 - Remittance Matching (Added 24 Dec 2025)
+
+**Highest priority layer** that parses remittance advice PDFs from the shared mailbox.
+
+**Value:**
+- Provides EXACT customer + invoice allocation
+- Solves Group 1 problem (169 accounts) - remittances include account codes like L0118
+- Multi-invoice payments get perfect allocation
+- £360k+ payments matched with confidence
+
+**Tested with 9 remittance formats:**
+| Sender | Invoices | Total | Account Ref |
+|--------|----------|-------|-------------|
+| AEW Architects | SI-807452 | £117.49 | - |
+| Savills | SI793064 | £272.17 | 036713 |
+| LEVC | SI-794819, SI-795304 | £1,643.02 | - |
+| Barratt Redrow | S1-796952, SI-778488 | £1,438.52 | LIQU001 |
+| Landsec | SI-806624, SI-806391, SI-791599 | £843.29 | SS5008233 |
+| Tower Leasing | SI-804553, SI-808839 | £360,794.04 | LIQU001 |
+| Marshall/Skoda | SI-794802 | £262.08 | L8519 |
+| Group 1 Toyota | SI-802324 | £831.96 | **L0118** |
+| Sefton Council | SI-803374, SI-801213, SI-800404 | £1,080.42 | 102551 |
+
+**Files created:**
+- `src/matching/remittance_parser.py` - PDF text extraction + AI parsing
+- `src/matching/layer0_remittance.py` - Remittance matching layer
+- Updated `src/matching/orchestrator.py` - Now 5-layer system
 
 ### All Meeting Requirements Analysis
 
@@ -176,7 +205,7 @@
 | Match against 16,108 customers | ✅ WORKING | Customer loader with 16,102 customers |
 | AKA sheet lookup (551 patterns) | ✅ WORKING | Layer 2 matches patterns |
 | Post to Eagle ERP | ✅ SUPPORTED | Excel export for manual Eagle import |
-| Remittance lookup | ⚠️ NOT AUTOMATED | Manual remittance matching still required |
+| Remittance lookup | ✅ AUTOMATED | Layer 0 remittance parser extracts invoice data from PDFs |
 | Multiple bank accounts (UK, IRE, EUR, USD) | ✅ FLEXIBLE | Parser handles any Lloyds format |
 | Target 70-80% automation | ✅ EXCEEDED | 99.4% match rate, 68.5% high confidence |
 
@@ -356,6 +385,145 @@ liquidline-automation/
 ├── data/                  # Bank files, customer data
 ├── context/               # Documentation, proposals
 └── output/                # Generated files
+```
+
+---
+
+---
+
+## 2025-12-24 - Video Analysis & Eagle Integration
+
+### Work Completed
+
+#### Video Frame Extraction
+- [x] Created `tools/extract_video_frames.py` - OpenCV-based frame extractor
+- [x] Processed 4 video recordings (~2 hours total)
+- [x] Extracted 713+ frames at 10-second intervals
+
+#### Video Analysis Findings (Nov 17 & Nov 19 Calls)
+
+**Eagle System Modules Identified:**
+| Module | Reference Format | URL Path |
+|--------|-----------------|----------|
+| Cash Receipts | SCT-XXXXXX | `/cash/ManageSalesLedgerCashTransactions` |
+| Sales Invoices | SI-XXXXXX | `/invoicing/ManageSalesInvoices` |
+| Customers | 5-digit codes | `/traderman/ManageCRMConsole` |
+| Payment Runs | Date-based | `/paymentruns/PaymentRunsApp` |
+| Bank Reconciliation | CSV Import | Settings page discovered |
+
+**Key Workflow Observations:**
+1. Bank download format: Type, Amount, Customer Reference, Transaction Detail, Balance
+2. Manual side-by-side matching in Excel (bank download vs reconciliation spreadsheet)
+3. DD Import button exists in Cash Receipts (for Direct Debits only)
+4. Bank Reconciliation Settings shows CSV import with column mapping
+
+#### Eagle Bank Statement Export
+- [x] Created `src/output/eagle_bank_statement.py` - CSV generator for Eagle import
+- [x] Format matches Bank Reconciliation Settings: Date, Type, Reference, Received, Paid, Balance
+- [x] Generated test file: `output/eagle_import_20251224_123141.csv`
+
+#### End-to-End Test
+- [x] Created `test_end_to_end.py` - Full workflow test script
+- [x] Results: 99.4% match rate, 170 transactions processed
+- [x] Eagle import file generated successfully
+
+---
+
+## HONEST ASSESSMENT: GAPS vs PROPOSAL
+
+### What Was Promised (Proposal)
+1. 65-70% automation of cash posting and bank reconciliation
+2. Streamlit dashboard for Curtis and Erin
+3. AI matching engine with pattern learning
+4. AKA sheet integration
+5. Excel export generation
+6. Quick-start guide and video walkthrough
+
+### What's Actually Delivered
+
+| Deliverable | Status | Honest Assessment |
+|-------------|--------|-------------------|
+| 65-70% match rate | ✅ **EXCEEDED** | 99.4% in testing (but not production-tested) |
+| Streamlit dashboard | ⚠️ **LOCAL ONLY** | Runs on localhost, NOT cloud deployed |
+| AI matching engine | ⚠️ **PARTIAL** | Layer 4 exists but OpenRouter API not configured |
+| AKA sheet integration | ✅ **WORKING** | 547 patterns loaded |
+| Excel export | ✅ **WORKING** | Curtis review + Eagle import formats |
+| Eagle import file | ⚠️ **UNTESTED** | CSV created but never imported into Eagle |
+| Quick-start guide | ⚠️ **MINIMAL** | docs/QUICK_START_GUIDE.md exists but basic |
+| Video walkthrough | ❌ **NOT DONE** | User provided videos, we didn't create training |
+
+### CRITICAL GAPS
+
+| Gap | Impact | Blocker? |
+|-----|--------|----------|
+| **No cloud deployment** | Users CANNOT access tool without Python install | YES - user explicitly said this is required |
+| **Eagle import untested** | Don't know if CSV actually works in Eagle | YES - core functionality unverified |
+| **API keys not configured** | Layer 4 AI won't work in production | MEDIUM - falls back to other layers |
+| **No live Eagle connection** | Manual export/import, not automated | LOW - expected in v1 |
+| **Remittance email not automated** | Manual PDF copy to folder | LOW - enhancement |
+
+### What Users CAN Do Today
+1. Run `python test_end_to_end.py` → generates Eagle import CSV
+2. Run `streamlit run app.py` → local dashboard at localhost:8501
+3. Upload bank CSV, see matches, download results
+
+### What Users CANNOT Do Today
+1. Access tool from browser without installing Python ❌
+2. Import directly to Eagle (untested) ❌
+3. Use AI layer without API key setup ❌
+4. Connect to remittance email inbox ❌
+
+---
+
+## RECOMMENDED CRITIQUE PROMPT
+
+For another agent to brutally assess this project:
+
+```
+You are a technical auditor reviewing a £10,000 fixed-price software project for delivery acceptance.
+
+PROJECT: Liquidline Bank Reconciliation Automation
+CONTRACT: £10,000 fixed price, 50% received, delivery expected January 2025
+TARGET: Automate 65-70% of cash posting and bank reconciliation
+CLIENT: Liquidline Limited (£50M coffee/vending company)
+
+Your task: Review all documentation and code to determine:
+
+1. DELIVERY READINESS: Is this project ready to hand over to the client?
+   - Can users access and use the tool without developer assistance?
+   - Has the core functionality been tested in the target environment (Eagle ERP)?
+   - Are there any blocking issues that would prevent client acceptance?
+
+2. REQUIREMENTS MET: Does the delivered system match what was proposed?
+   - Compare PROGRESS.md against the original proposal/meetings
+   - Identify any promised features that are missing or incomplete
+   - Note any scope creep or additions beyond the original agreement
+
+3. PRODUCTION READINESS:
+   - Is the code production-quality or prototype-quality?
+   - Are there security, performance, or reliability concerns?
+   - What would break if deployed to real users tomorrow?
+
+4. RISK ASSESSMENT:
+   - What could cause the client to reject delivery?
+   - What could cause the project to fail after handover?
+   - What should be disclosed to the client before sign-off?
+
+5. HONEST RECOMMENDATION:
+   - Should this project be delivered as-is?
+   - What MUST be completed before delivery?
+   - What is acceptable to defer to a "phase 2"?
+
+Be brutally honest. The goal is to identify problems BEFORE the client does.
+Consider: The client explicitly stated they cannot rely on users installing Python - they need a cloud-based tool.
+
+Key files to review:
+- PROGRESS.md (this file)
+- CLAUDE.md (project overview)
+- context/manus-analysis.md (original requirements analysis)
+- src/matching/orchestrator.py (core matching engine)
+- app.py (Streamlit dashboard)
+- test_end_to_end.py (test results)
 ```
 
 ---
