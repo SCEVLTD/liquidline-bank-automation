@@ -528,6 +528,71 @@ Key files to review:
 
 ---
 
+---
+
+## 2025-12-24 - ENTERPRISE DEPLOYMENT
+
+### Cloud Deployment Status
+
+**DEPLOYED:** GitHub branch `liquidline-deploy` created with clean project structure.
+
+**Repository Details:**
+- **Repo:** SCEVLTD/BrandedAI
+- **Branch:** `liquidline-deploy` (contains ONLY Liquidline project files at root)
+- **Main file:** `app.py`
+- **Requirements:** `requirements.txt`
+
+### Streamlit Cloud Deployment Steps
+
+1. Go to https://share.streamlit.io/
+2. Click "New app"
+3. Select repository: `SCEVLTD/BrandedAI`
+4. Select branch: `liquidline-deploy`
+5. Main file path: `app.py`
+6. Click "Deploy"
+
+### Secrets Configuration (Required)
+
+In Streamlit Cloud app settings → Secrets, add:
+
+```toml
+# Required for AI matching
+OPENROUTER_API_KEY = "sk-or-v1-your-key"
+
+# Authentication (choose one)
+APP_PASSWORD = "secure-password-here"
+# OR
+ALLOWED_EMAILS = "curtis@liquidline.co.uk,erin@liquidline.co.uk"
+
+# Client branding
+CLIENT_NAME = "Liquidline"
+PRIMARY_COLOR = "#1E88E5"
+
+# Features
+FEATURE_AI_MATCHING = "true"
+FEATURE_REMITTANCE = "true"
+```
+
+### Enterprise Features Implemented
+
+| Feature | Status | Notes |
+|---------|--------|-------|
+| Multi-tenant support | ✅ | Client name/colors configurable |
+| Password authentication | ✅ | Simple password or email restriction |
+| Streamlit Cloud auth | ✅ | Works with Teams/Enterprise |
+| API key auth | ✅ | For programmatic access |
+| Client branding | ✅ | Logo, colors, name from secrets |
+| Feature flags | ✅ | Enable/disable features per client |
+
+### Custom Domain Setup
+
+After deployment, in Streamlit Cloud:
+1. Go to App settings
+2. Under "Custom domain" add: `bankrec.brandedai.com`
+3. Add CNAME record in DNS pointing to Streamlit
+
+---
+
 ## Contact
 - **Project Lead:** Scott Markham, BrandedAI
 - **Client Lead:** Amber (Financial Controller), Liquidline
