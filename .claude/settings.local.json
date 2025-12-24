@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc:*)",
+      "Bash(python -m pip install:*)",
+      "Bash(python test_system.py:*)",
+      "Bash(python:*)",
+      "Bash(start:*)",
+      "Bash(timeout /t 5 /nobreak)",
+      "Bash(claude --update)",
+      "Bash(claude --version:*)",
+      "Bash(npm update:*)"
+    ]
+  }
+}

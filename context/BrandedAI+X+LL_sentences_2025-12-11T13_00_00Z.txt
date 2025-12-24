@@ -1,0 +1,428 @@
+BrandedAI X LL
+Metadata
+
+Title: BrandedAI X LL
+Location: Teams
+Date: 2025-12-11T12:59:50Z UTC
+Attendees: Karen Morphew, Michael Jefferies-Wilson, Scott Markham
+Link: https://app.meetgeek.ai/meeting/5fae15c1-b9df-4630-9b49-20bd8216eeb5
+Agenda:
+30-Minute General Meeting AgendaOpening and Welcome (1 minute)Quick welcome and introduction to the meeting's objectives.Review of Action Items (3 minutes)Brief update on the status of action items from the previous meeting.Key Discussions (20 minutes)Focused discussion on one or two key issues that need input or decision-making.Time-bound to ensure brevity and relevance.Next Steps (3 minutes)Quick summary of action items arising from the meeting's discussions.Assigning of responsibilities for these items.Wrap-Up (3 minutes)Final thoughts or comments.Confirm the time for the next meeting.
+
+MeetGeek Transcript
+
+Unknown speaker - 00:00
+Hi.
+I thought I'm I
+
+Michael Jefferies-Wilson - 00:07
+thought we had I mentioned HCC to Gavin.
+Yeah, the day.
+And I thought you said we had sage access.
+I swear there's some there's some there's some bits and pieces that they're like we don't mesh particularly well on some of these things like we don't know that we have no access still they keep
+
+Karen Morphew - 00:24
+sending backups.
+which is great, but not when you can't do anything with the backups.
+So it's still like we still don't know where we are really.
+And I had to say, kind of said over to us.
+So yeah, it's a bit difficult.
+It shouldn't be that
+
+Michael Jefferies-Wilson - 00:43
+hard.
+I know.
+I just
+
+Karen Morphew - 00:45
+feel like we've lost so much time already on it.
+So the quickest thing is just to go there.
+at this point.
+It just it takes a bit of the joy out of the acquisition journey when
+
+Michael Jefferies-Wilson - 01:03
+can't
+
+Karen Morphew - 01:03
+even click and get going.
+It's stressing, it's Yeah, we just need to plan.
+So I'll work on with the team.
+
+Michael Jefferies-Wilson - 01:16
+Sounds good, sounds good.
+
+Scott Markham - 01:19
+Hi, nice to meet you
+
+Karen Morphew - 01:20
+too.
+I think we've spoken on the phone.
+Yes.
+I'm a part of the article here, Scott.
+So
+
+Michael Jefferies-Wilson - 01:32
+Karen initially had the prioritized elsewhere and then I then spoke with you and then we've signed up with yourself and then now going back to Karen's with you.
+Trust the wood seas and you know I'm not involved to day.
+history.
+So I think it's just, it would be useful just to through some, some obvious sort of questions.
+But we've also, Scott, I know that one of the main things I wanted to approach was the team structure.
+So quite a big group meeting this morning.
+What was that eight of us, seven of us, quite a lot of Just to make sure that we've got the time frames right.
+
+Michael Jefferies-Wilson - 02:21
+We know how the staff are moving around.
+I'll be able to pitch it looks like I said, Scott, I'm kind of hoping this is just the tip of the iceberg.
+So, but we are very keen to see that.
+working model and, you know, to show before we cascade to the team.
+Anyway, so kind of just hoping to give you the floor ready, Karen.
+So I've sent you the proposal that we've signed and obviously there's, I appreciate it, Scott.
+There's a lot.
+
+Michael Jefferies-Wilson - 02:54
+There's a lot in there.
+So I've probably glanced over it more times than I've read it properly front to back.
+If that makes any sense.
+But yeah, Karen, do you want to just jump
+
+Karen Morphew - 03:04
+in?
+Yeah, sure.
+I think it's just to really understand what we're delivering and when, really, and just to tie out exactly what the outputs are going to be, because I know our system Eagle is quite tricky to understand.
+So one of my questions done, Michael, was are we sure it's going to do absolutely everything that Eagle would do or that we manually put it in and just to really like put that down on paper.
+So it's nice and clear as to what the deliverables are at each stage.
+
+Scott Markham - 03:30
+Yeah, sure.
+Currently, it would what we're planning is to have it provide an import document which can then be imported into Eagle.
+We're not doing any automatic implementation or automatic inputting into Eagle at this point.
+Yeah.
+So it's very much working outside of Eagle and then providing the import document
+
+Karen Morphew - 04:03
+Yeah, so one of the questions I had was, when we put the, like you've probably seen it, but when we put the payment on, you almost like put the entry on, and then there's this awful screen that you have to do to match it.
+Is it going to do the matching just show it as matched in the account history as well as just put the payment on?
+Yeah, all the matching
+
+Scott Markham - 04:26
+will happen outside.
+So that
+
+Karen Morphew - 04:28
+will still be manual, will it?
+No, that's what the
+
+Scott Markham - 04:33
+user interface is what we're going to create is that the bank exports and documentation will be loaded in.
+So that's
+
+Karen Morphew - 04:44
+not I'm not talking about matching on the bank rec I get that I'm talking about on the customer account.
+So they have all this list on the statement of open invoices and what we have to do is in the steps in Eagle number one you put the payment on or the receipt on if you like and then you go into this horrible little thing that then matches and then that's what clears it off the customer statement and
+the account record in Eagle.
+So I just want to make sure it's going to do the whole process.
+I'm sure we covered that with Holly.
+
+Michael Jefferies-Wilson - 05:15
+Yeah.
+I'm sure we covered that with Holly Scott.
+I'm sure that horrible little
+
+Karen Morphew - 05:19
+screen.
+So I just want to make sure that we're really clear on the statement of works that that's what will be delivered.
+Okay.
+Because I know that's what takes a lot of time.
+Yeah, sure.
+Yeah.
+And getting that right is quite tricky.
+
+Karen Morphew - 05:34
+And then if you need to undo it, how do you do it?
+Because sometimes there's a lot of invoices for exactly the same amount on multiple customer accounts.
+We have a lot of reversing out and then reapplying.
+So if there's a like how could that is it still going to be possible to be able to do those if it's come through an import?
+So that reversing
+
+Scott Markham - 05:57
+out that happens with an eagle.
+Manually,
+
+Karen Morphew - 06:00
+yeah.
+And
+
+Scott Markham - 06:05
+I guess it's
+
+Karen Morphew - 06:06
+also the other thing for me is on Eagle it's quite tricky to see how stuff has been allocated for one receipt in so how will what will it show and how would it be referenced so that we can say that one allocation happens on all of these transactions.
+It's not eagles not the most user friendly from this point of view.
+It's like someone that wasn't a finance person wrote it.
+And trying we struggle to unpick things, I think, at the moment.
+So I don't want be more complex.
+Do we currently have
+
+Michael Jefferies-Wilson - 06:40
+that piece that labels?
+No, it's
+
+Karen Morphew - 06:44
+horrible.
+Yeah, well, you kind of can see it, but it's really manual.
+So I just want to know what references will it put on and how would we be able to dig it back out because Eagle is not user-friendly.
+So I just want to make sure we've covered those things as well.
+Okay.
+
+Scott Markham - 07:05
+This, these are the kind of things that will be ironed out within like week four or five when we start.
+making sure that the initial section is happening correctly i.e.
+things are getting matched properly and then we've got the documentation to work with to import into Eagle that will be sort of week four five six that will be finalizing that and then ironing out all of those quirks to make sure that the things you're now asking for and making you know, state
+problems, we can start with the end of mind to make sure that those kind of elements, but those type of things will probably be lot clearer to check the actual functionality of them when they will and won't work or whether they need tweaking to make sure they do work or the import file needs an
+additional column or a trigger which enables that will become clearer further down the line.
+
+Karen Morphew - 08:10
+Yeah, okay.
+Is that fair?
+Yeah, no, that's fine.
+So I think under the deliverables where it says like one, two, three, the fifth one, we could possibly expand that a little bit more to say or do two functions.
+So the first is to interface the transaction and then second do the matching specific open items and to display it correctly on the customer statement and the record that's in Eagle.
+Because I think, Michael, if not, we've had this before where the statement has been incorrect to the account before when the background of the database has changed.
+It was horrendous.
+
+Karen Morphew - 08:55
+Because it's in all different bits and pieces where it's pulling data from.
+So the fact that I've seen it before, things go in, but don't reflect on that statement.
+I think that could be, we need to test that.
+Understood.
+
+Scott Markham - 09:14
+I hear the pain.
+Oh, it's
+
+Karen Morphew - 09:16
+awful.
+And do you want, yeah.
+
+Michael Jefferies-Wilson - 09:21
+I was going to say, Karen, do you want to just type, do you want to just type that out?
+Yeah, sure, yeah.
+Just type it out.
+It's just, it's just, it seems.
+Yeah.
+
+Karen Morphew - 09:31
+I just know that we've had those pain points before, so I think that's what we need to do.
+And I'm
+
+Michael Jefferies-Wilson - 09:39
+thinking, I'm thinking from what you're saying, Scott, that Like I alluded at the start of the call.
+We're quite we are quite keen to have some sort of model ahead of talking to the team.
+But don't I'm thinking that might not be possible because we need the team to support the testing, which is a requirement of this sort of four week five piece.
+Do you think.
+Do you think you'd be able to show us some sort of core model beforehand that will give us what we need to go back to the team?
+Absolutely.
+
+Scott Markham - 10:11
+I'll definitely get it to a point for you and Aaron to look at and we can have discussion.
+Yeah, the meeting to go through it in detail before we do anything with anybody else, even Holly or whatever necessary.
+Yeah, what I'd love to do
+
+Karen Morphew - 10:24
+is be able to take maybe one complicated transaction and just do a proof of concept and see and just double check a few things, and then we can have the confidence that it should be fine, and then the comms will follow.
+Yeah, that sounds
+
+Scott Markham - 10:43
+good.
+That would be a preferred way for the way we work anyway.
+I don't like going live with something that's not completely working as it should do so.
+So we'll definitely do a few test runs like that with the different scenarios of transactions that you do have.
+Yeah, and iron those out before we, you do a company-wide launch.
+
+Karen Morphew - 11:09
+Yeah, yeah, that sounds fine.
+Super.
+
+Michael Jefferies-Wilson - 11:14
+So what I'm thinking, Scott, is if can we can we try and line up diaries for various touch points?
+So Holly's put together most of the information you've asked for.
+That's two queries that are with IT, which I hope don't take forever, right?
+But we may have to work out a plan B potentially.
+Let's see how we get on.
+So hopefully you've got enough to start with.
+I'm aware that the PO piece is taking me forever.
+
+Michael Jefferies-Wilson - 11:43
+Karen our peer process just seems to be actually shocking.
+Yeah.
+So I think we're going to, we're going to onboard Scott as a miscellaneous supplier or something ahead doing it properly.
+Oh, my gosh, I don't want to get stuck in the weeds on it, frankly.
+But so we need to get that done.
+Hopefully field over the line Monday.
+And then obviously keen to, yeah, sorry, Karen, do you want to just tell Scott the change on the team and therefore who is going to be attending the meetings?
+
+Michael Jefferies-Wilson - 12:12
+Yes,
+
+Karen Morphew - 12:13
+so Amber is our financial controller.
+So Amber will be leading on this from doing all the work and all the projects management as well.
+So Holly is moving roles.
+So Amber will be your point of contact and your lead going forward.
+So that will bring Amber in as soon as we can.
+Brilliant.
+Yeah, fine.
+
+Scott Markham - 12:35
+It's all good.
+Because I think we said,
+
+Michael Jefferies-Wilson - 12:40
+yeah.
+I assume we're going to speak every week.
+And then it's just a case of, yeah, if you could send, Scott, if you could just send over like then how the next eight weeks look in terms of when we need to meet and we can obviously organize calendars and get back to you and basically what I'm keen to do as you can as you can appreciate it's
+get the meeting in the diary.
+Especially this time of year, especially when Karen has a number of key tasks at the moment so even that I just want to make sure that we actually time to make sure this gets moved forward because like I said at the start we've got.
+a key part our operating model next year for the finance function is the AI automation.
+So obviously with affecting two key people.
+
+Michael Jefferies-Wilson - 13:22
+So not key people, but you know what mean, key mind workloads.
+So yeah, just keen to get meetings of the day.
+Yeah,
+
+Scott Markham - 13:30
+sure.
+Yeah, I can do a cadence of progress as we're proposing it to be that you can then confirm dates from your side.
+Obviously,
+
+Michael Jefferies-Wilson - 13:42
+we've got Fantastic I think the main thing for me, the main thing for me is going to be the demo meeting.
+So Karen can line up the cascades of the team.
+So, you know, if you get back to us and say that demo is the 7th of January or whatever the day is, that for me is probably key gate we see the demo cascades the team.
+Yeah, and get going with that piece.
+Yeah, and I
+
+Karen Morphew - 14:09
+guess do we need to give you anything beforehand to be able to do that demo?
+
+Scott Markham - 14:18
+Well, I will be working with documentation I have at the moment, and then as the month goes on, if I need up to date data or information, I request it, but I've got the initial demo data that I need.
+Okay, brilliant.
+
+Karen Morphew - 14:33
+Do you have access to our dev site for Eagle as well, or do you need access to However,
+
+Scott Markham - 14:41
+if that would be good if I have, I don't have it at the moment.
+I just have English
+
+Karen Morphew - 14:45
+open.
+I'll just have the initial.
+Yeah.
+Yeah, I'll send over an IT ticket to ask for you to have access to the dev site.
+I don't know how up to date the data is in it, but they can always do a copy over, I think.
+So I can ask the question, but yeah, the process is the process.
+So it doesn't matter if it's old
+
+Michael Jefferies-Wilson - 15:05
+data.
+To get Scott, to get Scott access, Karen, ages and I had to go through Matt, so it might be worth just going straight to Matt.
+Yeah, frankly.
+Yeah, no, that's fine.
+Well, obviously, we seem to have lots of slow processes outside, Scott.
+So, we'll get there.
+We'll get there.
+
+Michael Jefferies-Wilson - 15:25
+Yeah, one at a time.
+
+Scott Markham - 15:26
+We'll just do one at a time.
+
+Karen Morphew - 15:29
+Yeah.
+Because I think if you can do proof of concept, you need access, don't you?
+Yeah, so I'll email Matt.
+Yeah.
+
+Scott Markham - 15:39
+Yeah, as I say, we try and keep everything clean as possible outside of Eagle to start with, and then as it develops, you know, we import things as trials and things that's where we need the dev site.
+And yeah, if we want to do integration phase two or something like that, or as we build it we can then go from there.
+Yeah, okay.
+Does that make sense?
+Excellent.
+
+Michael Jefferies-Wilson - 16:06
+Well, that's something I think we had anything else in your list, Karen?
+
+Karen Morphew - 16:10
+No, I think that's fine.
+Yeah, because I've noticed we've got a 50% project commencement payment.
+Will you send over an invoice for that?
+Or yeah,
+
+Scott Markham - 16:23
+I mean, I can do that based on the contract as signed at the moment, if that helps get it paid now.
+I was just, I didn't want to buck your system and try and
+
+Karen Morphew - 16:33
+do an invoice without getting a PO if that's going to cause a problem so I could raise the invoice and send the invoice and send the invoice and just have
+
+Scott Markham - 16:40
+the reference on there is this contract fine.
+Yeah, no, that's absolutely
+
+Karen Morphew - 16:43
+fine.
+And then I can get the PA raised once the supplier is set up.
+So yeah, it's fine.
+So yeah, no, that's fine.
+I'll see if the if
+
+Michael Jefferies-Wilson - 16:54
+we've got the supplier set up yet.
+So
+
+Karen Morphew - 16:59
+if you can tie it off.
+Yeah, of course.
+Yeah, no, that's fine.
+I'll see if the if we've got the supplier set up yet.
+But yeah, it'd be good to get the... Yes, I shouldn't say, is segregation duty, so I can actually set you up.
+would
+
+Michael Jefferies-Wilson - 17:20
+be good to get the payment you know, well, Wednesday.
+Is it Wednesday payment runs?
+Yeah.
+And there is that as well, which I had to just check with Scott because I was about, I couldn't see the VAT on
+
+Karen Morphew - 17:34
+the... Yeah, you're not set up as supplier as yet.
+So we need to go through that.
+So just send an invoice for now.
+Gavin knows about it as approved it, hasn't he?
+Yeah, so that's fine.
+Yeah.
+
+Scott Markham - 17:47
+I'll get that done this afternoon.
+Yeah, if you send the
+
+Karen Morphew - 17:49
+invoice over to us.
+I know we can just crack Yeah.
+Yeah, no, that's great.
+I'll check in with Fee as well as to if she's done the supplier request form.
+Brilliant.
+Great.
+Excellent.
+
+Karen Morphew - 18:01
+Okay, I'll send these notes over to you now.
+Thank you.
+Thanks.
+Bye.
+

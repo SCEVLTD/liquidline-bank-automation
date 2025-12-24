@@ -1,0 +1,36 @@
+Hi both
+
+Many thanks for your time today.  Notes on the meeting
+
+
+Cash receipt
+            Entry onto customer record
+            Matching to open invoices
+            Customer statement to reflect postings
+
+
+Proof of concept
+            Customer receipt testing with transaction types
+            Bank Rec
+
+
+
+Key date TBC – demo of proof of concept
+
+Action 
+-	KM to get SM access to the Eagle dev site
+-	KM to check on supplier set up and PO progress internally
+
+Kind Regards,
+
+Karen Morphew
+	|
+	Financial Director
+
+
+
+
+
+
+
+
