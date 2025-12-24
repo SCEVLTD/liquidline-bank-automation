@@ -200,7 +200,7 @@ def generate_matched_receipts_for_eagle(
             reference = f"{customer_code}: {reference}"[:50]
 
         transactions.append({
-            'date': txn.date,
+            'date': txn.post_date,  # FIXED: was txn.date (AttributeError)
             'amount': txn.amount,
             'reference': reference,
             'customer_code': customer_code,

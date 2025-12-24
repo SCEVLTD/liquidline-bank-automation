@@ -172,14 +172,16 @@ class SIInvoiceMatcher:
             )
             allocations.append(allocation)
 
+        # CRITICAL FIX: Without customer code, this is NOT postable to Eagle
+        # Mark as MEDIUM confidence to indicate manual lookup required
         return MatchResult(
-            customer_code="",  # To be looked up
+            customer_code="",  # To be looked up - NOT postable without this
             customer_name="",
-            confidence_score=0.95,  # High but not perfect without lookup
-            confidence_level=ConfidenceLevel.HIGH,
+            confidence_score=0.70,  # Reduced - invoice found but customer unknown
+            confidence_level=ConfidenceLevel.MEDIUM,  # Changed from HIGH - needs customer lookup
             match_method=MatchMethod.LAYER_1_SI_INVOICE,
             invoice_allocations=allocations,
-            match_details=f"SI invoice pattern found: {', '.join(invoices)} (customer lookup pending)"
+            match_details=f"SI invoice pattern found: {', '.join(invoices)} (NEEDS CUSTOMER LOOKUP - not postable)"
         )
 
     def _calculate_allocations(self, total_amount: float, allocations: List[InvoiceAllocation]) -> List[InvoiceAllocation]:

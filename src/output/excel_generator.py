@@ -17,7 +17,7 @@ from datetime import datetime
 from typing import List, Optional, Union
 import logging
 
-from ..models.transaction import Transaction, ConfidenceLevel
+from ..models.transaction import Transaction, ConfidenceLevel, MatchResult
 
 logger = logging.getLogger(__name__)
 
@@ -279,7 +279,8 @@ class ExcelGenerator:
         Generate Eagle import format file
 
         This format is specifically for importing into Eagle ERP.
-        Only includes HIGH confidence matches.
+        CRITICAL: Only includes matches WITH customer_code (postable to Eagle).
+        Matches without customer_code go to "Needs Review" sheet.
 
         Args:
             transactions: List of processed transactions
@@ -294,50 +295,88 @@ class ExcelGenerator:
 
         output_path = self.output_dir / filename
 
-        # Filter to high confidence only
-        high_conf_transactions = [
-            t for t in transactions
-            if t.match_result and t.match_result.confidence_level == ConfidenceLevel.HIGH
-        ]
+        # Split transactions by postability (has customer_code)
+        ready_to_post = []
+        needs_review = []
 
-        # Build import data
-        rows = []
-        for t in high_conf_transactions:
+        for t in transactions:
+            if not t.match_result:
+                continue
             match = t.match_result
+            # CRITICAL: Only include if we have a customer code
+            has_customer_code = bool(match.customer_code and match.customer_code.strip())
 
-            # Create row for each invoice allocation
-            if match.invoice_allocations:
-                for alloc in match.invoice_allocations:
-                    rows.append({
-                        "Post Date": t.post_date.strftime("%d/%m/%Y"),
-                        "Customer Code": match.customer_code,
-                        "Customer Name": match.customer_name,
-                        "Amount": alloc.allocated_amount,
-                        "Invoice Number": alloc.invoice_number,
-                        "Bank Reference": t.customer_reference,
-                        "Payment Method": self._map_payment_method(t.transaction_type),
-                        "Notes": f"Auto-matched via {match.match_method.value}"
-                    })
+            row_data = self._build_eagle_row(t, match)
+
+            if has_customer_code and match.confidence_level == ConfidenceLevel.HIGH:
+                ready_to_post.append(row_data)
             else:
-                # No invoice allocation - just customer match
-                rows.append({
-                    "Post Date": t.post_date.strftime("%d/%m/%Y"),
-                    "Customer Code": match.customer_code,
-                    "Customer Name": match.customer_name,
-                    "Amount": t.amount,
-                    "Invoice Number": "",
-                    "Bank Reference": t.customer_reference,
-                    "Payment Method": self._map_payment_method(t.transaction_type),
-                    "Notes": f"Auto-matched via {match.match_method.value}"
-                })
+                needs_review.append(row_data)
 
-        df = pd.DataFrame(rows)
+        ready_df = pd.DataFrame(ready_to_post) if ready_to_post else pd.DataFrame()
+        review_df = pd.DataFrame(needs_review) if needs_review else pd.DataFrame()
 
         with pd.ExcelWriter(output_path, engine='openpyxl') as writer:
-            df.to_excel(writer, sheet_name='Eagle Import', index=False)
+            # Ready to Post sheet - these can go directly into Eagle
+            if not ready_df.empty:
+                ready_df.to_excel(writer, sheet_name='Ready to Post', index=False)
+            else:
+                pd.DataFrame({"Message": ["No transactions ready to post - all need review"]}).to_excel(
+                    writer, sheet_name='Ready to Post', index=False)
 
-        logger.info(f"Generated Eagle import file: {output_path}")
+            # Needs Review sheet - missing customer code or low confidence
+            if not review_df.empty:
+                review_df.to_excel(writer, sheet_name='Needs Review', index=False)
+
+            # Add summary
+            summary_data = [
+                ["Eagle Import Summary", ""],
+                ["Generated", datetime.now().strftime("%d/%m/%Y %H:%M")],
+                ["", ""],
+                ["Ready to Post (has customer code)", len(ready_to_post)],
+                ["Needs Review (missing customer code)", len(needs_review)],
+                ["", ""],
+                ["Total Matched", len(ready_to_post) + len(needs_review)],
+                ["Postable Rate", f"{len(ready_to_post)/(len(ready_to_post)+len(needs_review))*100:.1f}%" if (len(ready_to_post)+len(needs_review)) > 0 else "0%"],
+            ]
+            pd.DataFrame(summary_data, columns=["Metric", "Value"]).to_excel(
+                writer, sheet_name='Summary', index=False, header=False)
+
+        logger.info(f"Generated Eagle import file: {output_path} ({len(ready_to_post)} postable, {len(needs_review)} need review)")
         return output_path
+
+    def _build_eagle_row(self, t: Transaction, match: MatchResult) -> dict:
+        """Build a single row for Eagle export"""
+        # Create row for primary invoice or transaction
+        if match.invoice_allocations and len(match.invoice_allocations) > 0:
+            alloc = match.invoice_allocations[0]
+            return {
+                "Post Date": t.post_date.strftime("%d/%m/%Y"),
+                "Customer Code": match.customer_code,
+                "Customer Name": match.customer_name,
+                "Amount": t.amount,
+                "Invoice Number": alloc.invoice_number,
+                "All Invoices": "; ".join([a.invoice_number for a in match.invoice_allocations]),
+                "Bank Reference": t.customer_reference,
+                "Payment Method": self._map_payment_method(t.transaction_type),
+                "Confidence": f"{match.confidence_score * 100:.0f}%",
+                "Needs Lookup": "YES" if not match.customer_code else "",
+                "Notes": match.match_details
+            }
+        else:
+            return {
+                "Post Date": t.post_date.strftime("%d/%m/%Y"),
+                "Customer Code": match.customer_code,
+                "Customer Name": match.customer_name,
+                "Amount": t.amount,
+                "Invoice Number": "",
+                "All Invoices": "",
+                "Bank Reference": t.customer_reference,
+                "Payment Method": self._map_payment_method(t.transaction_type),
+                "Confidence": f"{match.confidence_score * 100:.0f}%",
+                "Needs Lookup": "YES" if not match.customer_code else "",
+                "Notes": match.match_details
+            }
 
     def _map_payment_method(self, transaction_type: str) -> str:
         """Map bank transaction type to Eagle payment method"""

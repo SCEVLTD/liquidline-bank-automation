@@ -89,7 +89,11 @@ class MatchingOrchestrator:
             "unmatched": 0,
             "high_confidence": 0,
             "medium_confidence": 0,
-            "low_confidence": 0
+            "low_confidence": 0,
+            # NEW: Postable tracking (has customer_code = can be posted to Eagle)
+            "postable": 0,  # Matches WITH customer code
+            "needs_lookup": 0,  # Matches WITHOUT customer code (need manual lookup)
+            "high_postable": 0  # High confidence AND has customer code
         }
 
     def set_customer_loader(self, loader: CustomerLoader):
@@ -279,16 +283,33 @@ class MatchingOrchestrator:
         else:
             self.stats["low_confidence"] += 1
 
+        # Track postable status (CRITICAL: only postable if we have customer_code)
+        has_customer_code = bool(match_result.customer_code and match_result.customer_code.strip())
+        if has_customer_code:
+            self.stats["postable"] += 1
+            if match_result.confidence_level == ConfidenceLevel.HIGH:
+                self.stats["high_postable"] += 1
+        else:
+            self.stats["needs_lookup"] += 1
+
     def get_stats(self) -> Dict[str, Any]:
         """Get matching statistics"""
         total = self.stats["total_processed"]
         if total == 0:
             return self.stats
 
+        matched = total - self.stats["unmatched"]
+
         return {
             **self.stats,
-            "match_rate": (total - self.stats["unmatched"]) / total * 100,
+            # Match rate = any match found (may or may not have customer code)
+            "match_rate": matched / total * 100,
             "high_confidence_rate": self.stats["high_confidence"] / total * 100,
+            # CRITICAL NEW METRICS: Postable rates (what actually can go to Eagle)
+            "postable_rate": self.stats["postable"] / total * 100,
+            "high_postable_rate": self.stats["high_postable"] / total * 100,
+            "needs_lookup_rate": self.stats["needs_lookup"] / total * 100,
+            # Layer breakdown
             "layer_breakdown": {
                 "layer0_pct": self.stats["layer0_matches"] / total * 100,
                 "layer1_pct": self.stats["layer1_matches"] / total * 100,
@@ -310,5 +331,9 @@ class MatchingOrchestrator:
             "unmatched": 0,
             "high_confidence": 0,
             "medium_confidence": 0,
-            "low_confidence": 0
+            "low_confidence": 0,
+            # Postable tracking
+            "postable": 0,
+            "needs_lookup": 0,
+            "high_postable": 0
         }

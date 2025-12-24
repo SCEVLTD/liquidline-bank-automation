@@ -136,6 +136,10 @@ def render_sidebar():
             medium = sum(1 for t in transactions if t.match_result and t.match_result.confidence_level == ConfidenceLevel.MEDIUM)
             low = sum(1 for t in transactions if t.match_result and t.match_result.confidence_level == ConfidenceLevel.LOW)
 
+            # CRITICAL NEW METRIC: Postable = has customer_code (can be imported to Eagle)
+            postable = sum(1 for t in transactions if t.match_result and t.match_result.customer_code and t.match_result.customer_code.strip())
+            needs_lookup = matched - postable
+
             col1, col2 = st.columns(2)
             with col1:
                 st.metric("Total", total)
@@ -145,6 +149,19 @@ def render_sidebar():
                 st.metric("🟡 Medium", medium)
 
             st.metric("🔴 Low/Unmatched", low + (total - matched))
+
+            # CRITICAL: Show postable rate prominently
+            st.divider()
+            st.subheader("📤 Eagle Import Ready")
+            postable_pct = postable/total*100 if total else 0
+            st.metric(
+                "Postable Rate",
+                f"{postable_pct:.0f}%",
+                delta=f"{postable} of {total} ready",
+                delta_color="normal"
+            )
+            if needs_lookup > 0:
+                st.warning(f"⚠️ {needs_lookup} matches need customer lookup")
 
         st.divider()
 
@@ -219,9 +236,23 @@ def process_bank_file(file_path: Path):
 
             st.session_state.transactions = matched_transactions
 
-            # Show stats
+            # Show stats with honest postable rate
             stats = orchestrator.get_stats()
-            st.success(f"✅ Matching complete! Match rate: {stats.get('match_rate', 0):.1f}%")
+            match_rate = stats.get('match_rate', 0)
+            postable_rate = stats.get('postable_rate', 0)
+
+            st.success(f"✅ Matching complete!")
+
+            # Show both match rate and postable rate clearly
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.metric("Match Rate", f"{match_rate:.1f}%", help="Transactions with any match found")
+            with col2:
+                st.metric("Postable Rate", f"{postable_rate:.1f}%", help="Matches ready for Eagle import (has customer code)")
+            with col3:
+                needs_lookup = stats.get('needs_lookup', 0)
+                if needs_lookup > 0:
+                    st.metric("Need Lookup", needs_lookup, help="Matches missing customer code")
 
         except Exception as e:
             st.error(f"Error processing file: {e}")
