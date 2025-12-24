@@ -668,6 +668,59 @@ Currently, remittance PDFs must be **manually placed** in the `remittance_exampl
 
 ---
 
+---
+
+## 2025-12-24 - JOB 1 COMPLETE: Critical KPI Fixes
+
+### Problem Identified
+The audit revealed that "100% match rate" was **misleading** - 27% of exported rows had **missing customer codes**, meaning they couldn't be posted to Eagle without manual lookup.
+
+### Fixes Applied
+
+| File | Change | Impact |
+|------|--------|--------|
+| `src/matching/layer1_si.py` | SI matches without customer_code now MEDIUM (was HIGH) | Honest confidence levels |
+| `src/matching/orchestrator.py` | Added postable/needs_lookup tracking | New metrics available |
+| `src/output/excel_generator.py` | Split exports: "Ready to Post" vs "Needs Review" | Clear separation |
+| `src/output/eagle_bank_statement.py` | Fixed `txn.date` → `txn.post_date` | Bug fix |
+| `app.py` | Added Postable Rate metric to UI | Honest reporting |
+
+### New Metrics Now Displayed
+
+| Metric | Description |
+|--------|-------------|
+| **Match Rate** | Any match found (may or may not have customer code) |
+| **Postable Rate** | Matches WITH customer_code (can import to Eagle) |
+| **Needs Lookup** | Matches missing customer code |
+
+### Test Results After Fix (Local)
+- Match rate: 98.9%
+- Postable rate: 98.3% (175 of 178 have customer codes)
+- Eagle export: 129 ready to post, 47 need review
+
+### Deployment Verified
+- Pushed to Streamlit Cloud
+- New metrics visible in UI
+- App running at https://liquidline.streamlit.app
+
+---
+
+## REMAINING JOBS (for other agents)
+
+See `AGENT_JOBS.md` for detailed prompts for each job:
+
+| Job | Priority | Status | Owner |
+|-----|----------|--------|-------|
+| Job 1: Fix KPIs & Export | P0 | ✅ COMPLETE | - |
+| Job 2: Configure Secrets | MANUAL | ⏳ Pending | User |
+| Job 3: Invoice-to-Customer | P1 | ⏳ Pending | Agent |
+| Job 4: Test Eagle Import | MANUAL | ⏳ Pending | User+Karen |
+| Job 5: Documentation | P1 | ⏳ Pending | Agent |
+| Job 6: Pattern Learning | P2 | ⏳ Pending | Agent |
+| Job 7: Remittance Upload | P2 | ⏳ Pending | Agent |
+
+---
+
 ## Contact
 - **Project Lead:** Scott Markham, BrandedAI
 - **Client Lead:** Amber (Financial Controller), Liquidline
