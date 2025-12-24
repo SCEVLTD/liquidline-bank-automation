@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@anthropic-ai/mcp-server-playwright"]
+    },
+    
+    "claude-in-chrome": {
+      "type": "stdio",
+      "command": "claude",
+      "args": ["mcp", "serve", "--chrome"]
+     }
+  }
+}

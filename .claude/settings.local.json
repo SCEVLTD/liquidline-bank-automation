@@ -15,7 +15,25 @@
       "Bash(pip show:*)",
       "Bash(git add:*)",
       "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd Streamlit Cloud deployment config and Layer 0 remittance matching\n\n- Add .streamlit/config.toml for cloud deployment\n- Add secrets.toml.example for API key configuration\n- Update config.py to support Streamlit Cloud secrets\n- Add Layer 0 remittance parser \\(PDF extraction\\)\n- Add layer0_remittance.py matcher \\(highest priority\\)\n- Update orchestrator.py for 5-layer system\n- Add eagle_bank_statement.py CSV export for Eagle import\n- Add test_end_to_end.py full workflow test\n- Add video frame extraction tool\n- Update PROGRESS.md with honest assessment\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd enterprise SaaS features for licensing model\n\n- Add authentication module \\(password, Streamlit Cloud, API keys\\)\n- Add multi-tenant client configuration support\n- Add client branding \\(name, logo, colors\\)\n- Add feature flags for tiered licensing\n- Update app.py to use client config\n- Add remittance example PDFs\n- Update secrets.toml.example with full enterprise config\n\nReady for Streamlit Cloud deployment with:\n- Custom domain support\n- Per-client authentication\n- Usage tracking preparation\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(gh auth:*)",
+      "Bash(railway version:*)",
+      "Bash(winget install:*)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth status)",
+      "Bash(dir:*)",
+      "Bash(git config:*)",
+      "Bash(git show:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git subtree split:*)",
+      "Bash(npx:*)",
+      "Bash(claude mcp list:*)",
+      "Bash(claude mcp add:*)",
+      "Bash(claude mcp remove:*)",
+      "Bash(timeout /t 10 /nobreak)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth login --web)",
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" repo create SCEVLTD/liquidline-bank-automation --public --description \"Liquidline Bank Reconciliation Automation\")"
     ]
   }
 }

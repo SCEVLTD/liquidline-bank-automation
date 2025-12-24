@@ -28,8 +28,13 @@ class AuthManager:
     def _detect_auth_mode(self) -> str:
         """Detect which authentication mode to use based on environment"""
         # Check if running on Streamlit Cloud with auth enabled
-        if hasattr(st, 'experimental_user') and st.experimental_user.email:
-            return "streamlit_cloud"
+        try:
+            if hasattr(st, 'experimental_user'):
+                user_email = getattr(st.experimental_user, 'email', None)
+                if user_email:
+                    return "streamlit_cloud"
+        except (AttributeError, Exception):
+            pass  # Not on Streamlit Cloud or auth not enabled
 
         # Check for password protection
         if self._get_secret("APP_PASSWORD"):
@@ -73,7 +78,10 @@ class AuthManager:
     def _check_streamlit_cloud_auth(self) -> bool:
         """Check Streamlit Cloud authentication"""
         try:
-            user_email = st.experimental_user.email
+            user_email = getattr(st.experimental_user, 'email', None)
+            if not user_email:
+                return False
+
             allowed_domains = self._get_secret("ALLOWED_DOMAINS")
             allowed_emails = self._get_secret("ALLOWED_EMAILS")
 
@@ -88,7 +96,7 @@ class AuthManager:
 
             # If no restrictions, allow any authenticated user
             return bool(user_email)
-        except:
+        except (AttributeError, Exception):
             return False
 
     def _check_password_auth(self) -> bool:
@@ -133,11 +141,13 @@ class AuthManager:
         """Get information about the current authenticated user"""
         if self.auth_mode == "streamlit_cloud":
             try:
-                return {
-                    "email": st.experimental_user.email,
-                    "auth_mode": "streamlit_cloud"
-                }
-            except:
+                user_email = getattr(st.experimental_user, 'email', None)
+                if user_email:
+                    return {
+                        "email": user_email,
+                        "auth_mode": "streamlit_cloud"
+                    }
+            except (AttributeError, Exception):
                 pass
 
         return {
