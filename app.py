@@ -1,9 +1,15 @@
 """
-Liquidline Bank Reconciliation Automation
+BrandedAI Bank Reconciliation SaaS Platform
 Streamlit Dashboard Application
 
 Main entry point for the automation system.
 Provides interface for Curtis (Cash Posting) and Erin (Bank Reconciliation)
+
+Enterprise Features:
+- Multi-tenant support
+- Authentication (password, Streamlit Cloud, API keys)
+- Client-specific branding
+- Usage tracking
 """
 
 import streamlit as st
@@ -16,13 +22,29 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Page config
+# Import auth module
+try:
+    from src.auth.auth_manager import check_auth, get_client_config
+    AUTH_AVAILABLE = True
+except ImportError:
+    AUTH_AVAILABLE = False
+    def check_auth(): return True
+    def get_client_config(): return {"client_name": "Liquidline", "primary_color": "#1E88E5"}
+
+# Get client config for branding
+client_config = get_client_config()
+
+# Page config - uses client branding
 st.set_page_config(
-    page_title="Liquidline Bank Automation",
+    page_title=f"{client_config['client_name']} Bank Automation",
     page_icon="💰",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# Check authentication (if enabled)
+if AUTH_AVAILABLE and not check_auth():
+    st.stop()
 
 # Import our modules
 from config import (
@@ -78,7 +100,7 @@ def load_reference_data():
 def render_sidebar():
     """Render sidebar with data loading and stats"""
     with st.sidebar:
-        st.title("💰 Liquidline")
+        st.title(f"💰 {client_config['client_name']}")
         st.subheader("Bank Reconciliation Automation")
 
         st.divider()
@@ -350,7 +372,7 @@ def main():
     render_sidebar()
 
     # Main content
-    st.title("Liquidline Bank Reconciliation Automation")
+    st.title(f"{client_config['client_name']} Bank Reconciliation Automation")
     st.markdown("*Intelligent matching system for cash posting and bank reconciliation*")
 
     st.divider()

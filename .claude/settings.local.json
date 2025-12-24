@@ -9,7 +9,13 @@
       "Bash(timeout /t 5 /nobreak)",
       "Bash(claude --update)",
       "Bash(claude --version:*)",
-      "Bash(npm update:*)"
+      "Bash(npm update:*)",
+      "Bash(pip install:*)",
+      "Bash(cd:*)",
+      "Bash(pip show:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd Streamlit Cloud deployment config and Layer 0 remittance matching\n\n- Add .streamlit/config.toml for cloud deployment\n- Add secrets.toml.example for API key configuration\n- Update config.py to support Streamlit Cloud secrets\n- Add Layer 0 remittance parser \\(PDF extraction\\)\n- Add layer0_remittance.py matcher \\(highest priority\\)\n- Update orchestrator.py for 5-layer system\n- Add eagle_bank_statement.py CSV export for Eagle import\n- Add test_end_to_end.py full workflow test\n- Add video frame extraction tool\n- Update PROGRESS.md with honest assessment\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)"
     ]
   }
 }
