@@ -33,7 +33,9 @@
       "Bash(claude mcp remove:*)",
       "Bash(timeout /t 10 /nobreak)",
       "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" auth login --web)",
-      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" repo create SCEVLTD/liquidline-bank-automation --public --description \"Liquidline Bank Reconciliation Automation\")"
+      "Bash(\"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\" repo create SCEVLTD/liquidline-bank-automation --public --description \"Liquidline Bank Reconciliation Automation\")",
+      "Bash(cat:*)",
+      "Bash(timeout /t 15 /nobreak)"
     ]
   }
 }
